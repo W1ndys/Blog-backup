@@ -1,5 +1,5 @@
 ---
-title:  CTF解密常用平台
+title:  CTF常用解密平台
 tags:  CTF
 categories:  CTF
 ---
@@ -12,7 +12,7 @@ categories:  CTF
 
 工具很多
 
-
+------
 
 持续更新中……
 
