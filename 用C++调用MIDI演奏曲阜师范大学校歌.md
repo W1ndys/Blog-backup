@@ -1,5 +1,4 @@
 ---
-
 title:  用C++调用MIDI演奏曲阜师范大学校歌
 tags: QFNU
 categories:   QFNU

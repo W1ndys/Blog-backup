@@ -1,8 +1,8 @@
 ---
 title:  攻防世界-Reverse-666writeup
-tags:  CTF-re
-categories:  CTF -re
-
+tags:  CTF
+categories:  [CTF,WP,RE]
+index_img: https://t.mwm.moe/pc/?5
 ---
 
 # 查壳

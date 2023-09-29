@@ -1,8 +1,8 @@
 ---
 title:  CTF常用解密平台
 tags:  CTF
-categories:  CTF
-
+categories:  [CTF,平台]
+index_img: https://t.mwm.moe/pc/?10
 ---
 
 # 1.[CyberChef (mzy0.com)](https://ctf.mzy0.com/CyberChef3/)
