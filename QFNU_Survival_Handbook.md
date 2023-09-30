@@ -1,9 +1,9 @@
 ---
-
 title:  曲阜师范大学日常问题汇总
 tags:  QFNU
 categories:  QFNU
 sticky:  9999999998
+index_img:  /img/qfnu大门.jpg
 ---
 
 正在编辑……预计一学年完成
