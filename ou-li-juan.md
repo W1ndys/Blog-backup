@@ -7,4 +7,4 @@ index_img: https://z1.ax1x.com/2023/09/30/pPqcohF.jpg
 
 永远学习欧丽娟老师！
 
-![](https://i1.hdslb.com/bfs/archive/b94ef13b78a52c361520ca9bcd451d677995ef1b.jpg)
+![](https://z1.ax1x.com/2023/09/30/pPqcohF.jpg)
