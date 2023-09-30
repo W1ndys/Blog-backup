@@ -2,7 +2,7 @@
 title:  如何安装Microsoft office各种版本以及破解||office盗版弹窗的关闭方法
 tags: Windows技术分享
 categories:  [Windows,office]
-index_img: https://t.mwm.moe/pc/?156
+
 ---
 
 想必大家都认识Microsoft office

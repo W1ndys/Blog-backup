@@ -2,7 +2,7 @@
 title:  C++类的基本学习
 tags:  理
 categories: [C++,类]
-index_img: https://t.mwm.moe/pc/?16
+
 ---
 
 （因为上学期C++选修课没认真听，导致这学期数据结构啥也不会，好吧，出来混迟早是要还的，现在开始恶补C++）

@@ -2,7 +2,7 @@
 title:  CTF入门指北——web
 tags:  CTF
 categories:  [CTF,CTF入门指北]
-index_img: https://t.mwm.moe/pc/?13
+
 ---
 
 # moectf2023 web 入门指南

@@ -2,7 +2,7 @@
 title:  CTF常用刷题平台
 tags: CTF
 categories: [CTF,平台]
-index_img: https://t.mwm.moe/pc/?11
+
 ---
 
 1.NSSCTF，适合新手

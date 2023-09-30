@@ -2,7 +2,7 @@
 title: 通过 Hexo 5 注入器为主题添加新功能
 tags:  hexo
 categories: [hexo,用法]
-index_img: https://t.mwm.moe/pc/?9
+
 ---
 
 ## Hexo 注入器

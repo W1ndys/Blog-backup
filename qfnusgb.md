@@ -3,7 +3,7 @@ title:  曲阜师范大学网络空间安全学院社团管理部
 tags:  QFNU
 categories:  QFNU
 sticky:  999999999999
-index_img: https://t.mwm.moe/pc/?1358
+
 ---
 
 <font color='red' size=6>曲阜师范大学网络空间安全学院社团管理部欢迎你的到来！</font>

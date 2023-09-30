@@ -2,7 +2,7 @@
 title:  hexo博客中tags与categories用法
 tags:  hexo
 categories: [hexo,用法]
-index_img: https://t.mwm.moe/pc/?159
+
 ---
 
 [hexo博客中tags与categories用法 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/348131730)

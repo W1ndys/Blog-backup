@@ -2,7 +2,7 @@
 title:  CTF入门指北——reserve
 tags:  CTF
 categories:  [CTF,CTF入门指北]
-index_img: https://t.mwm.moe/pc/?12
+
 ---
 
 > 来自西安电子科技大学Moectf

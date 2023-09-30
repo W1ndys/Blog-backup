@@ -2,7 +2,7 @@
 title: 提问的智慧
 tags:  文
 categories:  [学习笔记,提问的智慧]
-index_img: https://t.mwm.moe/pc/?1115
+
 ---
 
 # 提问的智慧
