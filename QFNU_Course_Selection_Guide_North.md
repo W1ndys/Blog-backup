@@ -726,6 +726,12 @@ https://w1ndys.github.io/2023/09/01/QFNU_Course_Selection_Guide_North/
 
 > 大爱无疆
 
+#### 齐苏敏
+
+人很好会手把手教你，有问题也可以QQ问他，非常耐心，有问必答，给分比较高
+
+>糖浆SoarFay
+
 ## 数据结构
 
 ### ————曲阜————
