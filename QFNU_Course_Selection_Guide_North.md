@@ -9,24 +9,17 @@ sticky:  9999999999
 
 ps：[《曲阜师范大学日常问题汇总》](https://w1ndys.top/2023/08/25/QFNU_Survival_Handbook/)已开始施工
 
-###### <font color='red' size="4">网络空间安全学院的同学欢迎加入社团管理部（院学生会</font>
-
-[点击链接加入群聊【社团管理部纳新群】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=dXDA4Iy_JIHJIFv9fH2rF5hAnko1NtBE&authKey=UpUG3qGYb%2FLna893qrZvM9%2FuUQ56EiOM33mBaEWl%2FPTKkZZQW8x1VNv4p9bfOLQS&noverify=0&group_code=927133937)
-
-###### <font color='red' size="4">欢迎全校同学加入网络空间安全协会（社团</font>
-
-[点击链接加入群聊【网络空间安全协会迎新群】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=U31myLo8ssxMaN58lUQ-pqwPORm3t52z&authKey=WekPrqS%2BxW4JELD8DT0lgrofnsE8%2F%2Fl3GL2HyBlr%2FPi1R24dtk3dhKImD0%2FwEoUu&noverify=0&group_code=903130443)
-
-###### <font color='red' size="4">欢迎全校同学加入翼创联盟（社团</font>
-
-[点击链接加入群聊【翼创联盟🔅】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=x2eN9k6eRJyz-i-V5T-yjS1cJMES0Hpr&authKey=POIiApZHRsveNpjhVaMXfbQCuvYkZpkQVEO7L16saknhTtesUe6v8XFGq8PddjGe&noverify=0&group_code=923360134)
-
 
 ---
 
 <font size=5>**<u>阅读本项目前请仔细阅读【曲阜师范大学选课指北项目用户协议】</u>**[用户协议](https://w1ndys.top/2023/09/06/QFNU_Course_Selection_Guide_North(yhxy)/)</font>
 
 <font color='red'>本项目数据原则上只客观描述上课风格，对于每一种情况，每一种同学的评价也不相同，数据来自全校同学并追加署名，无法做到完全符合实际情况，请仔细甄别</font>
+
+---
+
+“我并不强求访客必须留下一条数据来完善平台，或者强制谁必须填问卷，我只希望同学们在被本平台受益的同时也会想起来分享给朋友，让更多人受益，也会想起来回馈给平台数据，哪怕是一条，也会对大家有帮助，你所散发的光将会照亮整个世界“
+~~“你可以躲在角落里沉默，但是不要诋毁和嘲笑比你勇敢的人，因为他们争取到的光明也许会照耀到你”~~
 
 ---
 
