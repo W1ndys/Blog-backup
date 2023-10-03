@@ -1,7 +1,7 @@
 ---
 title:  kali如何切换源
 tags: Linux
-categories:  [Linux,kali]
+categories:  [Linux,kali,切换源]
 ---
 
 转载  
