@@ -1,7 +1,7 @@
 ---
-title:利用Kali中的工具John破解压缩包密码（弱密码
-tags: Linux
-categories:  [Linux,kali,john]
+title: 利用Kali中的工具John破解压缩包密码（弱密码
+tags:  Linux
+categories:   [Linux,kali,john]
 
 ---
 
