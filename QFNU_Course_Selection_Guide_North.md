@@ -153,12 +153,6 @@ https://w1ndys.github.io/2023/09/01/QFNU_Course_Selection_Guide_North/
 
 > W1ndys
 
-#### 田凤雷
-
-给分可以，会捞，在考试前会说考试题型，老师很厉害成就很高，上课全程板书，很负责。
-
-> 奋斗者
-
 ## 大学英语
 
 ### ————曲阜————
