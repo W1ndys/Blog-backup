@@ -1,8 +1,7 @@
 ---
 title: 实验二、链式存储结构线性表的建立及操作
-tags:  QFNU
-categories:  [学习笔记,数据结构作业]
-
+tags:  数据结构
+categories:  [学习笔记,数据结构作业,实验]
 
 ---
 
