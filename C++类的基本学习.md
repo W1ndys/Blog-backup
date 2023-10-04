@@ -1,6 +1,6 @@
 ---
 title:  C++类的基本学习
-tags:  理
+tags:  C++
 categories: [C++,类]
 
 ---
