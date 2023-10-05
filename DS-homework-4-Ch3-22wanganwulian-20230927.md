@@ -33,4 +33,75 @@ categories:  [学习笔记,数据结构作业]
 
 # Ch3-3. 假设以带头结点的循环单链表表示队列，并且只设一个尾指针Node*Rear 指向队尾结点（没有队头指针Node *front），试编写入队和出队算法。
 
-> 还没写
+> AI生成的，不想做了，谨慎查阅
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+// 定义结点
+typedef struct Node {
+    int data;
+    struct Node* next;
+} Node;
+
+// 定义队列
+typedef struct Queue {
+    Node* rear;
+} Queue;
+
+// 初始化队列
+Queue* initQueue() {
+    Node* head = (Node*)malloc(sizeof(Node));  // 创建头结点
+    head->next = head;  // 循环链表
+    Queue* queue = (Queue*)malloc(sizeof(Queue));
+    queue->rear = head;  // 尾指针指向头结点
+    return queue;
+}
+
+// 入队操作
+void enQueue(Queue* queue, int data) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = data;
+    newNode->next = queue->rear->next;  // 新结点指向头结点
+    queue->rear->next = newNode;  // 尾结点指向新结点
+    queue->rear = newNode;  // 更新尾指针
+}
+
+// 出队操作
+int deQueue(Queue* queue) {
+    if (queue->rear == queue->rear->next) {
+        printf("队列为空，无法出队。\n");
+        return -1;
+    }
+    Node* head = queue->rear->next;  // 头结点
+    Node* firstNode = head->next;  // 第一个结点（即要出队的结点）
+    int data = firstNode->data;
+    head->next = firstNode->next;  // 头结点指向第二个结点
+    if (firstNode == queue->rear) {  // 如果只有一个元素，出队后更新尾指针
+        queue->rear = head;
+    }
+    free(firstNode);  // 释放出队的结点内存
+    return data;
+}
+
+int main() {
+    Queue* queue = initQueue();
+    
+
+    printf("入队：\n");
+    for (int i = 1; i <= 5; i++) {
+        printf("%d ", i);
+        enQueue(queue, i);
+    }
+    
+    printf("\n出队：\n");
+    for (int i = 1; i <= 5; i++) {
+        printf("%d ", deQueue(queue));
+    }
+    
+    return 0;
+
+}
+```
+
