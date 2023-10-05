@@ -9,26 +9,25 @@ categories: [C++,常用代码]
 ```c++
 #include <iostream>
 #include <random>
+#include <chrono>
+
 using namespace std;
 
 int main() {
-    default_random_engine generator;// 创建一个随机数生成器
-    uniform_int_distribution<int> distribution(1,100);// 创建一个1到100的均匀分布
-    int random_number = distribution(generator);// 生成随机数
-    cout << "生成的随机数是: " << random_number << endl;// 输出随机数
+    // 使用当前时间作为随机数生成器的种子
+    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+    
+    // 创建一个随机数生成器
+    default_random_engine generator(seed);
+    
+    // 创建一个均匀分布的随机数生成器，范围从1到100
+    uniform_int_distribution<int> distribution(1,100);
+    
+    // 生成并打印一个随机数
+    cout << "Random number: " << distribution(generator) << endl;
+    
     return 0;
 }
-```
 
-```c++
-default_random_engine generator;// 创建一个随机数生成器
-```
-
-```c++
-uniform_int_distribution<int> distribution(1,100);// 创建一个1到100的均匀分布
-```
-
-```c++
-int random_number = distribution(generator);// 生成随机数
 ```
 
