@@ -2,6 +2,7 @@
 title:  C++常用的代码模板
 tags:  C++
 categories: [C++,常用代码]
+
 ---
 
 # 生成随机数
