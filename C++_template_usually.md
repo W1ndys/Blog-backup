@@ -4,7 +4,9 @@ tags:  C++
 categories: [C++,常用代码]
 ---
 
-# 1.生成随机数
+# 生成随机数
+
+## 源代码
 
 ```c++
 #include <iostream>
@@ -31,3 +33,15 @@ int main() {
 
 ```
 
+## 摘要
+
+```C++
+// 使用当前时间作为随机数生成器的种子
+unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+
+// 创建一个随机数生成器
+default_random_engine generator(seed);
+
+// 创建一个均匀分布的随机数生成器，范围从1到100
+uniform_int_distribution<int> distribution(1,100);
+```
