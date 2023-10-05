@@ -2,6 +2,8 @@
 title: DS作业-4-Ch3-22网安物联网-20230927
 tags:  数据结构
 categories:  [学习笔记,数据结构作业]
+password: why520
+message: 作业答案被加密了，快暴揍W1ndys让他说出密码
 ---
 
 # Ch3-1. 总结栈空、栈满、队空、队满的判定条件。
