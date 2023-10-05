@@ -137,7 +137,118 @@ int main()
 
 # 作业Ch2-4:算法设计：在顺序表中删除所有元素值为x的元素，要求空间复杂度为O(1)，给出算法伪代码和源代码。
 
-> 还没写
+```
+#include <iostream>
+#include <random>   
+using namespace std;
+default_random_engine generator; // 创建一个随机数生成器
+uniform_int_distribution<int> distribution(1, 20); // 创建一个1到10的均匀分布
+const int MaxSize = 100;            //100只是示例性的数据，根据实际问题具体定义
+
+template <class DataType>          //定义模板类SeqList
+class SeqList
+{
+public:
+    SeqList();                     //无参构造函数，建立空的顺序表
+    SeqList(DataType a[], int n);      //有参构造函数，建立长度为n的顺序表
+    ~SeqList();                    //析构函数
+    DataType Delete(int i);            //删除操作，删除第i个元素
+    void PrintList();                 //遍历操作，按序号依次输出各元素
+private:
+    DataType data[MaxSize];          //存放数据元素的数组
+    int length;                       //线性表的长度
+};
+
+template <class DataType>
+DataType SeqList<DataType> ::Delete(int x)
+{   /*这段代码遍历顺序表，每次遇到值不等于x的元素时，就将其复制到新的位置。最后，它将顺序表的长度设置为新的长度。这个算法的空间复杂度是O(1)，因为它只使用了固定数量的额外空间。*/
+    int j = 0;
+    for (int i = 0; i < length; i++)
+    {
+        if (data[i] != x)
+        {
+            data[j] = data[i];
+            j++;
+        }
+        
+    }
+    length = j;
+    return x;
+    /*
+    这个有两种做法，还有一种是直接删除。每次遇到值为x的元素时，就将其删除。但是，这种方法的时间复杂度是O(n^2)，因为每次删除操作都需要O(n)的时间。
+    for (int i = 0; i < length; i++)
+    {
+        if (data[i] == x)
+        {
+            for (int j = i; j < length - 1; j++)
+            {
+                data[j] = data[j + 1];
+            }
+            length--;
+            i--;  // 因为删除了元素，所以需要将索引减1
+        }
+    }*/
+}
+
+template<class DataType>
+SeqList<DataType> :: ~SeqList()
+{
+
+}
+
+template <class DataType>
+SeqList<DataType> ::SeqList()
+{
+    length = 0;
+}
+
+template <class DataType>
+SeqList<DataType> ::SeqList(DataType a[], int n)
+{
+    if (n > MaxSize)
+        throw "参数非法";
+    for (int i = 0; i < n; i++)
+        data[i] = a[i];
+    length = n;
+}
+
+template <class DataType>
+void SeqList<DataType> ::PrintList()
+{
+    for (int i = 0; i < length; i++)
+        cout << data[i]<<" ";                   //依次输出线性表的元素值
+}
+
+int main()
+{
+    int maxsize;
+    cout << "请输入你要创建表的大小" << endl;
+    cin >> maxsize;
+    int* a = new int[maxsize];
+    for (int i = 0; i < maxsize; i++)
+    {
+        int random_number = distribution(generator); // 生成随机数
+        a[i] = random_number; //赋值
+    }
+    cout << "已创建一个最大长度" << maxsize << "的顺序表" << endl;
+    SeqList<int> L{ a, maxsize };
+    cout << "*******执行遍历链表******" << endl;
+    L.PrintList();
+    cout << endl;
+    cout << "**************************" << endl;
+    cout << "请输入你要删除的数据" << endl;
+    int del;
+    cin >> del;
+    cout << "删除的数据是" << L.Delete(del) << endl;
+    cout << "*******执行遍历链表******" << endl;
+    L.PrintList();
+    cout << endl;
+    cout << "**************************" << endl;
+    return 0;
+}
+```
+
+
 
 # 作业Ch2-5:算法设计：已知单链表中各结点的元素值为整型且递增有序，设计算法删除链表中大于mink且小于maxk的所有元素，并释放被删结点的存储空间，给出算法伪代码和源代码。
 
