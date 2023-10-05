@@ -168,10 +168,11 @@ int main()
 
 ```C++
 #include <iostream>
-#include <random>   
+#include <random>
+#include <chrono>
+
 using namespace std;
-default_random_engine generator; // 创建一个随机数生成器
-uniform_int_distribution<int> distribution(1, 20); // 创建一个1到10的均匀分布
+
 const int MaxSize = 100;            //100只是示例性的数据，根据实际问题具体定义
 
 template <class DataType>          //定义模板类SeqList
@@ -250,14 +251,19 @@ void SeqList<DataType> ::PrintList()
 
 int main()
 {
+    // 使用当前时间作为随机数生成器的种子
+    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+    // 创建一个随机数生成器
+    default_random_engine generator(seed);
+    // 创建一个均匀分布的随机数生成器，范围从1到100
+    uniform_int_distribution<int> distribution(1, 10);
     int maxsize;
     cout << "请输入你要创建表的大小" << endl;
     cin >> maxsize;
     int* a = new int[maxsize];
     for (int i = 0; i < maxsize; i++)
     {
-        int random_number = distribution(generator); // 生成随机数
-        a[i] = random_number; //赋值
+        a[i] = distribution(generator);//赋值
     }
     cout << "已创建一个最大长度" << maxsize << "的顺序表" << endl;
     SeqList<int> L{ a, maxsize };
