@@ -10,7 +10,7 @@ password: 5252why
 
 ![](https://cyberdownload.anrunlu.net/FlO6Qn0cVLJHriuYzOv453gkwMYY)
 
-# 实验二主体
+# 代码主体
 
 以下是一个简单的C++实现，用于维护单链表：
 
