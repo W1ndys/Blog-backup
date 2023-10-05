@@ -12,7 +12,7 @@ categories:  [学习笔记,数据结构作业]
 
 > 没用ai跑，自己写的，实际上原理就是头插法和尾插法，两个方法的顺序是相反的
 
-```
+```C++
 #include <iostream>
 using namespace std;
 
@@ -137,7 +137,7 @@ int main()
 
 # 作业Ch2-4:算法设计：在顺序表中删除所有元素值为x的元素，要求空间复杂度为O(1)，给出算法伪代码和源代码。
 
-```
+```C++
 #include <iostream>
 #include <random>   
 using namespace std;
