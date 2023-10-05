@@ -45,3 +45,11 @@ default_random_engine generator(seed);
 // 创建一个均匀分布的随机数生成器，范围从1到100
 uniform_int_distribution<int> distribution(1,100);
 ```
+```
+distribution(generator)
+```
+
+```
+#include <chrono>
+```
+
