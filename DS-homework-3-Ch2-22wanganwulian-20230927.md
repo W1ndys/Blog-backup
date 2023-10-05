@@ -2,7 +2,10 @@
 title:  DS作业-3-Ch2-22网安物联网-20230927
 tags:  数据结构
 categories:  [学习笔记,数据结构作业]
+
 ---
+
+> 已完结，仅供留档查阅，切勿直接复制
 
 # 作业Ch2-1:总结单链表中引入头节点的原因？
 
@@ -283,8 +286,128 @@ int main()
 }
 ```
 
-
-
 # 作业Ch2-5:算法设计：已知单链表中各结点的元素值为整型且递增有序，设计算法删除链表中大于mink且小于maxk的所有元素，并释放被删结点的存储空间，给出算法伪代码和源代码。
 
-> 还没写
+```C++
+#include <iostream>                  //引入输入输出流
+#include <random>
+#include <chrono>
+
+using namespace std;
+
+template <typename DataType>
+struct Node
+{
+    DataType data;               //数据域
+    Node<DataType>* next;       //指针域
+};
+
+template <typename DataType>
+class LinkList
+{
+public:
+    LinkList();                      //无参构造函数，建立只有头结点的空链表
+    LinkList(DataType a[], int n);       //有参构造函数，建立有n个元素的单链表
+    ~LinkList();                     //析构函数
+    void Delete(int mink, int maxk);
+    void PrintList();                  //遍历操作，按序号依次输出各元素
+
+private:
+    Node<DataType>* first;           //单链表的头指针
+}; 
+
+template <typename DataType>
+void LinkList<DataType> ::Delete(int mink,int maxk)
+{
+    DataType x;
+    Node<DataType>* p = first->next, * q = first;        //工作指针p指向头结点
+    while (p != nullptr)
+    {
+        if ((p->data<maxk) &&(p->data>mink) )
+        {
+            q->next = p->next;
+            delete p;
+            p = q->next;
+        }
+        else
+        {
+            q = p;
+            p = p->next;
+            
+        }
+    }
+}
+
+template <typename DataType>
+LinkList<DataType> ::LinkList()
+{
+    first = new Node<DataType>;              //生成头结点
+    first->next = nullptr;                      //头结点的指针域置空
+}
+
+template <class DataType>
+LinkList<DataType> :: ~LinkList()
+{
+    Node<DataType>* q = NULL;
+    while (first != NULL)        //释放单链表的每一个结点的存储空间
+    {
+        q = first;                 //暂存被释放结点
+        first = first->next;         // first指向被释放结点的下一个结点
+        delete q;
+    }
+}
+
+template <typename DataType>
+void LinkList<DataType> ::PrintList()
+{
+    Node<DataType>* p = first->next;                //工作指针p初始化
+    while (p != nullptr)
+    {
+        cout << p->data << "\t";
+        p = p->next;                 //工作指针p后移，注意不能写作p++
+    }
+}
+
+//尾插法构造
+template <typename DataType>
+LinkList<DataType> ::LinkList(DataType a[], int n)
+{
+    first = new Node<DataType>;                    //生成头结点
+    Node<DataType>* r = first, * s = nullptr;           //尾指针初始化
+    for (int i = 0; i < n; i++)
+    {
+        s = new Node<DataType>; s->data = a[i];
+        r->next = s; r = s;                 //将结点s插入到终端结点之后
+    }
+    r->next = nullptr;        //单链表建立完毕，将终端结点的指针域置空
+}
+
+int main()
+{
+    int maxsize;
+    cout << "请输入你要创建表的大小" << endl;
+    cin >> maxsize;
+    int* a = new int[maxsize];
+    for (int i = 0; i < maxsize; i++)
+    {
+        a[i] = i;
+    }
+    cout << "已创建一个最大长度" << maxsize << "的单链表" << endl;
+    LinkList<int> L{ a, maxsize };
+    cout << "*******执行遍历链表******" << endl;
+    L.PrintList();
+    cout << endl;
+    cout << "**************************" << endl;
+    cout << "请输入左右界定范围mink和maxk" << endl;
+    int mink, maxk;
+    cin >> mink >> maxk;
+    cout << "**************************" << endl;
+    L.Delete(mink, maxk);
+    cout << "题解删除操作已执行完毕" << endl;
+    cout << "*******执行遍历链表******" << endl;
+    L.PrintList();
+    cout << endl;
+    cout << "**************************" << endl;
+}
+```
+
