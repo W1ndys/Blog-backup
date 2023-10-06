@@ -7,6 +7,36 @@ categories:  [CTF,工具]
 
 # 编码解码
 
+## Python脚本
+
+### 比较两个字符串输出不同的部分
+
+```
+def compare_strings(str1, str2):
+    str11 = ""
+    str12 = ""
+    for i in range(min(len(str1), len(str2))):
+        if str1[i] != str2[i]:
+            str11+=str1[i]
+            str12+=str2[i]
+    print(str11)
+    print(str12)
+# 定义两个字符串
+str1 = "第一个字符串"
+str2 = "第二个字符串"
+
+# 调用函数
+compare_strings(str1, str2)
+```
+
+### 删除所有回车
+
+```
+text = "你的文本\n包含\n回车"
+new_text = text.replace("\n", "")
+print(new_text)
+```
+
 ## 在线工具包
 
 - [Cyberchef的自动解密magic模式](https://ctf.mzy0.com/CyberChef3/#recipe=Magic(3,false,false,''))
