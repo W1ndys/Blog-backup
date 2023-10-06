@@ -38,33 +38,22 @@ private:
 	int top;	//栈顶元素的下标
 };
 
-template<typename datatype>
-datatype seqstack<datatype> ::toptop()
-{
-	return	top;
-}
 
 template<typename datatype>
-seqstack<datatype> ::seqstack()
-{
-	top = -1;
-}
-
-template<typename datatype>
-seqstack<typename datatype> ::~seqstack()
+seqstack<datatype>::~seqstack()
 {
 
 }
 
 template<typename datatype>
-void seqstack<typename datatype> ::push(datatype x)
+void seqstack<datatype>::push(datatype x)
 {
 	top++;
 	data[top] = x;
 }
 
 template<typename datatype>
-datatype seqstack<typename datatype> ::pop()
+datatype seqstack<datatype>::pop()
 {
 	datatype x;
 	x = data[top];
@@ -73,13 +62,13 @@ datatype seqstack<typename datatype> ::pop()
 }
 
 template<typename datatype>
-datatype seqstack<typename datatype> ::gettop()
+datatype seqstack<datatype>::gettop()
 {
 	return data[top];
 }
 
 template<typename datatype>
-int seqstack<typename datatype> ::empty()
+int seqstack<datatype>::empty()
 {
 	if (top == -1)
 	{
@@ -91,14 +80,48 @@ int seqstack<typename datatype> ::empty()
 	}
 }
 
+template<typename datatype>
+datatype seqstack<datatype>::toptop()
+{
+	return	top;
+}
+
+template<typename datatype>
+seqstack<datatype>::seqstack()
+{
+	top = -1;
+}
+    /*
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+            .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    佛祖保佑       永不宕机     永无BUG
+*/
+
 int main()
 {
-	int ws1 = 0, ws2 = 0;
-	seqstack<int> S{};//定义顺序栈变量S
-	cout << "系统已压栈1,2,3" << endl;
+	int ws1 = 0;
+	seqstack<int> S{};//定义顺序栈变量
 	S.push(1);
 	S.push(2);
-	S.push(3);
+	S.push(3); 
+	cout << "系统已压栈1,2,3" << endl;
 	cout << "输入一个元素进行压栈" << endl;
 	cin >> ws1;
 	S.push(ws1);
@@ -138,36 +161,158 @@ int main()
 }
 ```
 
-2. 链式栈LinkStack的实现：
+## 链式栈LinkStack的实现：
 
-```
-struct Node {
-    int data;
-    Node* next;
+> 自己写的
+
+```c++
+#include <iostream>
+using namespace std;
+
+template <typename datatype>
+struct node
+{
+    datatype data;
+    node<datatype>* next;
 };
-class LinkStack {
-    Node* top;
+
+template <typename datatype>
+class linkstack
+{
 public:
-    LinkStack(): top(NULL) {}
-    void push(int x) {
-        Node* newNode = new Node();
-        newNode->data = x;
-        newNode->next = top;
-        top = newNode;
-    }
-    int pop() {
-        if (top == NULL) {
-            cout << "Stack is empty";
-            return -1;
-        }
-        int x = top->data;
-        Node* temp = top;
-        top = top->next;
-        delete temp;
-        return x;
-    }
+    linkstack();
+    ~linkstack();
+    void push(datatype x);  //入栈
+    datatype pop();     //出栈
+    datatype gettop();  //取栈顶
+    int empty();        //判空
+private:
+    node<datatype>* top;
 };
 
+template <typename datatype>
+linkstack<datatype>::linkstack()
+{
+    top = nullptr;
+}
+
+template <typename datatype>
+linkstack<datatype>::~linkstack()
+{
+    cout << "程序退出，析构函数被调用!" << endl;
+    while (!empty())
+    {
+        cout << "出栈元素：" << pop() << endl;
+    }
+    cout << "程序退出链栈已清空!" << endl;
+}
+
+template <typename datatype>
+datatype linkstack<datatype> ::gettop()
+{
+    if (top == nullptr)
+        throw "下溢异常";
+    else
+        return top->data;
+}
+
+
+template <typename datatype>
+void linkstack<datatype> ::push(datatype x)
+{
+    node<datatype>* s = nullptr;
+    s = new node<datatype>;
+    s->data = x; //申请结点s数据域为x
+    s->next = top;
+    top = s; //将结点s插在栈顶
+}
+
+template <typename datatype>
+datatype linkstack<datatype> ::pop()
+{
+    node<datatype>* p = nullptr;
+    datatype x;
+    if (top == nullptr) throw "下溢";
+    x = top->data; p = top; //暂存栈顶元素
+    top = top->next; //将栈顶结点摘链
+    delete p;
+    return x;
+}
+
+template <typename datatype>
+int linkstack<datatype>::empty()
+{
+    if (top == nullptr) return 1;
+    return 0;
+}
+
+    /*
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+            .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    佛祖保佑       永不宕机     永无BUG
+*/
+int main()
+{
+    int ws1 = 0;
+    linkstack<int> S{};//定义顺序栈变量S
+    S.push(1);
+    S.push(2);
+    S.push(3);
+    cout << "系统已压栈1,2,3" << endl;
+    cout << "输入一个元素进行压栈" << endl;
+    cin >> ws1;
+    S.push(ws1);
+    cout << "当前栈顶元素为：" << S.gettop() << endl;
+    cout << "*****************" << endl;
+    cout << "执行一次出栈操作" << endl;
+    cout << "已释放" << S.pop() << endl;
+    cout << "当前栈顶元素为：" << S.gettop() << endl;
+    cout << "*****************" << endl;
+    cout << "执行一次判空操作" << endl;
+    if (S.empty() == 1)
+    {
+        cout << "栈空" << endl;
+    }
+    else
+    {
+        cout << "栈非空" << endl;
+    }
+    cout << "*****************" << endl;
+    cout << "正在出所有栈" << endl;
+    while (S.empty() != 1)
+    {
+        cout << "已释放" << S.pop() << endl;
+    }
+    cout << "已释放出所有栈" << endl;
+    cout << "*****************" << endl;
+    cout << "执行一次判空操作" << endl;
+    if (S.empty() == 1)
+    {
+        cout << "栈空" << endl;
+    }
+    else
+    {
+        cout << "栈非空" << endl;
+    }
+    return 0;
+}
 ```
 
 3. 循环队列CirQueue的实现：
