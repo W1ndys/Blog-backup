@@ -4,41 +4,138 @@ tags:  数据结构
 categories:  [学习笔记,数据结构作业,实验]
 message: 作业答案被加密了，快暴揍W1ndys让他说出密码
 password: 5252why
+
 ---
+
+> 声明：仅供留档查阅，仅用作起到提示引导性作用，仅用作学习交流，切勿直接照搬
 
 ![](https://cyberdownload.anrunlu.net/FruAGRXClw43THvg6TkSyPl_4S3q)
 
 # 代码主体
 
-> 数据来自bing ai
+## 顺序栈SeqStack的实现：
 
-这是一个很好的练习，可以帮助你更好地理解栈和队列的数据结构。以下是一些基本的C++实现，你可以参考：
+> 自己写的
 
-1. 顺序栈SeqStack的实现：
+```c++
+#include <iostream>
+using namespace std;
+const int stacksize = 100;  // 定义最大栈顶具体情况具体分析
 
-```
-#define MAXSIZE 100
-class SeqStack {
-    int data[MAXSIZE];
-    int top;
+template<typename datatype>   //定义模板类seqstack
+class seqstack
+{
 public:
-    SeqStack(): top(-1) {}
-    void push(int x) {
-        if (top == MAXSIZE - 1) {
-            cout << "Stack is full";
-            return;
-        }
-        data[++top] = x;
-    }
-    int pop() {
-        if (top == -1) {
-            cout << "Stack is empty";
-            return -1;
-        }
-        return data[top--];
-    }
+	seqstack();   //构造函数，初始化空栈
+	~seqstack();	//析构函数
+	void push(datatype x);	//压栈
+	datatype pop();	//出栈
+	datatype gettop();//取栈顶
+	datatype toptop();//取栈顶下标
+	int empty();	//判空操作
+private:
+	datatype data[stacksize];	//存放栈元素的数组
+	int top;	//栈顶元素的下标
 };
 
+template<typename datatype>
+datatype seqstack<datatype> ::toptop()
+{
+	return	top;
+}
+
+template<typename datatype>
+seqstack<datatype> ::seqstack()
+{
+	top = -1;
+}
+
+template<typename datatype>
+seqstack<typename datatype> ::~seqstack()
+{
+
+}
+
+template<typename datatype>
+void seqstack<typename datatype> ::push(datatype x)
+{
+	top++;
+	data[top] = x;
+}
+
+template<typename datatype>
+datatype seqstack<typename datatype> ::pop()
+{
+	datatype x;
+	x = data[top];
+	top--;
+	return x;
+}
+
+template<typename datatype>
+datatype seqstack<typename datatype> ::gettop()
+{
+	return data[top];
+}
+
+template<typename datatype>
+int seqstack<typename datatype> ::empty()
+{
+	if (top == -1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+int main()
+{
+	int ws1 = 0, ws2 = 0;
+	seqstack<int> S{};//定义顺序栈变量S
+	cout << "系统已压栈1,2,3" << endl;
+	S.push(1);
+	S.push(2);
+	S.push(3);
+	cout << "输入一个元素进行压栈" << endl;
+	cin >> ws1;
+	S.push(ws1);
+	cout << "当前栈顶元素为：" << S.gettop() << endl;
+	cout << "*****************" << endl;
+	cout << "执行一次出栈操作" << endl;
+	cout << "已释放" << S.pop() << endl;
+	cout << "当前栈顶元素为：" << S.gettop() << endl;
+	cout << "*****************" << endl;
+	cout << "执行一次判空操作" << endl;
+	if (S.empty() == 1)
+	{
+		cout << "栈空" << endl;
+	}
+	else
+	{
+		cout << "栈非空" << endl;
+	}
+	cout << "*****************" << endl;
+	cout << "正在出所有栈" << endl;
+	for (int i = S.toptop(); i > -1 ; i--)
+	{
+		cout << "已释放" << S.pop() << endl;
+	}
+	cout << "已释放出所有栈" << endl;
+	cout << "*****************" << endl;
+	cout << "执行一次判空操作" << endl;
+	if (S.empty() == 1)
+	{
+		cout << "栈空" << endl;
+	}
+	else
+	{
+		cout << "栈非空" << endl;
+	}
+    return 0;
+}
 ```
 
 2. 链式栈LinkStack的实现：
