@@ -14,7 +14,21 @@ password: 5252why
 
 # 作业Ch2-2:编程题目，逆置一个单链表为一个新表，编制源代码并运行。
 
-> 没用ai跑，自己写的，实际上原理就是头插法和尾插法，两个方法的顺序是相反的
+> ~~没用ai跑，自己写的，实际上原理就是头插法和尾插法，两个方法的顺序是相反的~~
+>
+> 重做了，原来的做法不符题意，虽然功能是一样的，新做法的思路↓
+
+> `nizhi`函数的原理是通过改变链表中节点的链接顺序来实现链表的反转。
+>
+> 具体步骤如下：
+>
+> 1. 初始化：创建一个新的空链表（只有头节点，头节点的`next`指针为`nullptr`）。
+> 2. 遍历原链表：从原链表的第一个节点开始，每次处理一个节点。
+> 3. 插入新链表：将当前处理的节点插入到新链表的头节点之后。具体操作是先将当前节点的`next`指针指向新链表的第一个节点，然后再将头节点的`next`指针指向当前节点。
+> 4. 移动到下一个节点：保存下一个要处理的节点的位置，然后将当前节点从原链表中断开（也就是将当前节点的`next`指针置为`nullptr`），最后移动到下一个要处理的节点。
+> 5. 重复步骤3和4，直到原链表中所有的节点都被处理完毕。
+>
+> 这样，原链表中的节点就被逐个移动到了新链表中，并且在新链表中的顺序与在原链表中的顺序相反，从而实现了链表的反转。这个过程中，我们没有创建任何新的节点，只是改变了已有节点之间的链接关系。因此，这个函数的时间复杂度为O(n)，空间复杂度为O(1)。
 
 ```C++
 #include <iostream>
@@ -31,94 +45,93 @@ template<typename DataType>
 class linklist
 {
 public:
-	linklist();
-	linklist(DataType a[],int n);
-	~linklist();
-	void nizhi(DataType a[], int m);
-	void display();
+    linklist();
+    linklist(DataType a[], int n);
+    ~linklist();
+    void nizhi();
+    void display();
 private:
-	Node<DataType>* first;//头结点
+    Node<DataType>* first;//头结点
 };
 
 template<typename DataType>
 linklist<DataType>::linklist()
 {
-	first = new Node<DataType>;
-	first->next = nullptr;//头结点指针置空
+    first = new Node<DataType>;
+    first->next = nullptr;//头结点指针置空
 }
 
 template <typename DataType>
 linklist<DataType>::linklist(DataType a[], int n)
 {
-	first = new Node<DataType>;              // 生成头结点
-	Node<DataType>* r = first, * s = nullptr; // 尾指针初始化
-	for (int i = 0; i < n; i++)
-	{
-		s = new Node<DataType>;
-		s->data = a[i];
-		r->next = s;
-		r = s; // 将结点s插入到终端结点之后
-	}
-	r->next = nullptr; // 单链表建立完毕，将终端结点的指针域置空
+    first = new Node<DataType>;              // 生成头结点
+    Node<DataType>* r = first, * s = nullptr; // 尾指针初始化
+    for (int i = 0; i < n; i++)
+    {
+        s = new Node<DataType>;
+        s->data = a[i];
+        r->next = s;
+        r = s; // 将结点s插入到终端结点之后
+    }
+    r->next = nullptr; // 单链表建立完毕，将终端结点的指针域置空
 }
 
 template<typename DataType>
-void linklist<DataType>::nizhi(DataType a[], int n)
+void linklist<DataType>::nizhi()
 {
-	first = new Node<DataType>;
-	first->next = nullptr;
-	for (int i = 0; i < n; i++)
-	{
-		Node<DataType>* s = nullptr;
-		s = new Node<DataType>;
-		s->data = a[i];
-		s->next = first->next;
-		first->next = s;
-	}
+    Node<DataType>* p = first->next;
+    Node<DataType>* q;
+    first->next = nullptr;
+    while (p != nullptr)
+    {
+        q = p->next; // 保存下一个节点的位置
+        p->next = first->next; // 将当前节点插入到头节点之后
+        first->next = p;
+        p = q; // 移动到下一个节点
+    }
 }
 
 template<typename DataType>
 void linklist<DataType>::display()
 {
-	Node<DataType>* p = first->next;
-	while (p != nullptr)
-	{
-		cout << p->data << "\t";
-		p = p->next;
-	}
+    Node<DataType>* p = first->next;
+    while (p != nullptr)
+    {
+        cout << p->data << "\t";
+        p = p->next;
+    }
 }
 
 template <class DataType>
 linklist<DataType>::~linklist()
 {
-	Node<DataType>* q = NULL;
-	while (first != NULL) // 释放单链表的每一个结点的存储空间
-	{
-		q = first;           // 暂存被释放结点
-		first = first->next; // first指向被释放结点的下一个结点
-		delete q;
-	}
+    Node<DataType>* q = NULL;
+    while (first != NULL) // 释放单链表的每一个结点的存储空间
+    {
+        q = first;           // 暂存被释放结点
+        first = first->next; // first指向被释放结点的下一个结点
+        delete q;
+    }
 }
 
 int main()
 {
-	int maxsize;
-	cout << "请输入你要创建数组的大小" << endl;
-	cin >> maxsize;
-	int* a = new int[maxsize];
-	for (int i = 0; i < maxsize; i++)
-	{
-		a[i] = i + 1;
-		cout << " " << endl;
-	}
-	cout << "已创建一个最大长度" << maxsize << "的链表" << endl;
-	linklist<int> L{ a, maxsize };
-	cout << "执行遍历链表" << endl;
-	L.display();
-	cout << endl;
-	cout << "下面逆置最大长度为" << maxsize << "的链表" << endl;
-	L.nizhi(a, maxsize);
-	L.display();
+    int maxsize;
+    cout << "请输入你要创建数组的大小" << endl;
+    cin >> maxsize;
+    int* a = new int[maxsize];
+    for (int i = 0; i < maxsize; i++)
+    {
+        a[i] = i + 1;
+    }
+    cout << "已创建一个最大长度" << maxsize << "的链表" << endl;
+    linklist<int> L{ a, maxsize };
+    cout << "执行遍历链表" << endl;
+    L.display();
+    cout << endl;
+    cout << "下面逆置最大长度为" << maxsize << "的链表" << endl;
+    L.nizhi();
+    L.display();
     return 0;
 }
 ```
