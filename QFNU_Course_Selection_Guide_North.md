@@ -1286,5 +1286,9 @@ END
 </center>
 
 
+# 想赞助我？
 
+爱发电链接https://afdian.net/a/W1ndys
+
+随意赞助，不绑架，打多少都行
 
