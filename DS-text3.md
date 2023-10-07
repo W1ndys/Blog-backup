@@ -315,85 +315,253 @@ int main()
 }
 ```
 
-3. 循环队列CirQueue的实现：
+## 循环队列CirQueue的实现：
 
-```
-#define MAXSIZE 100
-class CirQueue {
-    int data[MAXSIZE];
-    int front, rear;
+```c++
+#include<iostream>
+using namespace std;
+
+const int queuesize = 100; //最大长度
+template <typename datatype>
+class cirqueue
+{
 public:
-    CirQueue(): front(0), rear(0) {}
-    void enqueue(int x) {
-        if ((rear + 1) % MAXSIZE == front) {
-            cout << "Queue is full";
-            return;
-        }
-        rear = (rear + 1) % MAXSIZE;
-        data[rear] = x;
-    }
-    int dequeue() {
-        if (front == rear) {
-            cout << "Queue is empty";
-            return -1;
-        }
-        front = (front + 1) % MAXSIZE;
-        return data[front];
-    }
+	cirqueue();
+	~cirqueue();
+	void enqueue(datatype x);//入队
+	datatype dequeue();//出队
+	datatype getqueue();//取队头
+	int empty();//判空操作
+private:
+	datatype data[queuesize];//存放需要的数组
+	int front, rear;//队头和队尾指针
 };
 
+template<typename datatype>
+cirqueue<datatype>::cirqueue()
+{
+	rear = front = queuesize - 1;
+}
+
+template<typename datatype>
+cirqueue<datatype>::~cirqueue()
+{
+
+}
+
+template<typename datatype>
+void cirqueue<datatype>::enqueue(datatype x)
+{
+	rear = (rear + 1) % queuesize; //队尾指针+1
+	data[rear] = x;			//在队尾插入元素
+}
+
+template<typename datatype>
+datatype cirqueue<datatype>::dequeue()
+{
+	front = (front + 1) % queuesize;
+	return data[front];
+}
+
+template<typename datatype>
+datatype cirqueue<datatype>::getqueue()
+{
+	return data[(front + 1) % queuesize];
+}
+
+template<typename datatype>
+int cirqueue<datatype>::empty()
+{
+	if (front == rear)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+int main()
+{
+	cirqueue<int> S{};
+	int x = 0;
+	S.enqueue(1);
+	S.enqueue(2);
+	S.enqueue(3);
+	cout << "已入队1,2,3" << endl;
+	cout << "******取一次队头******" << endl;
+	cout << "队头是：" << S.getqueue() << endl;
+	cout << "请输入一个元素进行入队" << endl;
+	cin >> x;
+	S.enqueue(x);
+	cout << "已入队：" << x << endl;
+	cout << "******取一次队头******" << endl;
+	cout << "队头是：" << S.getqueue() << endl;
+	cout << "******执行一次出队******" << endl;
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "*****进行一次判空*****" << endl;
+	if (S.empty() == 1)
+	{ 
+		cout << "队列空" << endl;
+	}
+	else
+	{
+		cout << "队列非空" << endl;
+	}
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "*****进行一次判空*****" << endl;
+	if (S.empty() == 1)
+	{
+		cout << "队列空" << endl;
+	}
+	else
+	{
+		cout << "队列非空" << endl;
+	}
+	return 0;
+}
 ```
 
-4. 链式队列LinkQueue的实现：
+## 链式队列LinkQueue的实现：
 
-```
-struct Node {
-    int data;
-    Node* next;
+```c++
+#include<iostream>
+using namespace std;
+
+template<typename datatype>
+struct node
+{
+	datatype data;
+	node<datatype>* next;
 };
-class LinkQueue {
-    Node *front, *rear;
+
+template<typename datatype>
+class linkqueue
+{
 public:
-    LinkQueue() {
-        front = rear = new Node();
-    }
-    void enqueue(int x) {
-        Node* newNode = new Node();
-        newNode->data = x;
-        newNode->next = NULL;
-        rear->next = newNode;
-        rear = newNode;
-    }
-    int dequeue() {
-        if (front == rear) {
-            cout << "Queue is empty";
-            return -1;
-        }
-        Node* temp = front->next;
-        int x = temp->data;
-        front->next = temp->next;
-        if (rear == temp)
-            rear = front;
-        delete temp;
-        return x;
-    }
+	linkqueue();
+	~linkqueue();
+	void enqueue(datatype x);
+	datatype dequeue();
+	datatype getqueue();
+	int empty();
+private:
+	node<datatype>* front, * rear;
 };
 
+template<typename datatype>
+linkqueue<datatype>::linkqueue()
+{
+	node<datatype>* s = nullptr;
+	s = new node<datatype>;//开辟空间
+	s->next = nullptr;
+	front = rear = s;
+
+}
+
+template<typename datatype>
+linkqueue<datatype>::~linkqueue()
+{
+	node<datatype>* q = nullptr;
+	while (front != nullptr)
+	{
+		q = front;
+		front = front->next;
+		delete q;
+	}
+}
+
+template<typename datatype>
+void linkqueue<datatype>::enqueue(datatype x)
+{
+	node<datatype>* s = nullptr;
+	s = new node<datatype>;
+	s->data = x;
+	s->next = nullptr;
+	rear->next = s;	//插入到队尾
+	rear = s;		//移动队尾
+}
+
+template<typename datatype>
+datatype linkqueue<datatype>::dequeue()
+{
+	datatype x;
+	node<datatype>* p = nullptr;
+	p = front->next;
+	x = p->data;
+	front->next = p->next;
+	delete p;
+	return x;
+}
+
+template<typename datatype>
+datatype linkqueue<datatype>::getqueue()
+{
+	return front->next->data;
+}
+
+template<typename datatype>
+int linkqueue<datatype>::empty()
+{
+	if (front == rear )
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+int main()
+{
+	int x;
+	linkqueue<int> S = {};
+	S.enqueue(1);
+	S.enqueue(2);
+	S.enqueue(3);
+	cout << "已入队1,2,3" << endl;
+	cout << "******取一次队头******" << endl;
+	cout << "队头是：" << S.getqueue() << endl;
+	cout << "请输入一个元素进行入队" << endl;
+	cin >> x;
+	S.enqueue(x);
+	cout << "已入队：" << x << endl;
+	cout << "******取一次队头******" << endl;
+	cout << "队头是：" << S.getqueue() << endl;
+	cout << "******执行一次出队******" << endl;
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "*****进行一次判空*****" << endl;
+	if (S.empty() == 1)
+	{
+		cout << "队列空" << endl;
+	}
+	else
+	{
+		cout << "队列非空" << endl;
+	}
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.dequeue() << endl;
+	cout << "*****进行一次判空*****" << endl;
+	if (S.empty() == 1)
+	{
+		cout << "队列空" << endl;
+	}
+	else
+	{
+		cout << "队列非空" << endl;
+	}
+	return 0;
+}
 ```
 
 5. 十进制转换为二至九进制之间的任一进制的算法实现：
 
 ```
-void decToBase(int n, int base) {
-    SeqStack S; // 假设SeqStack已经实现
-    while (n > 0) {
-        S.push(n % base);
-        n /= base;
-    }
-    while (!S.isEmpty()) { // 假设isEmpty()已经实现
-       cout << S.pop();
-   }
-}
-
+我跑路了
 ```
 
