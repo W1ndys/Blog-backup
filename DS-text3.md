@@ -20,55 +20,77 @@ password: 5252why
 ```c++
 #include <iostream>
 using namespace std;
-const int stacksize = 100;  // 定义最大栈顶具体情况具体分析
+const int StackSize = 100;  // 定义最大栈顶具体情况具体分析
 
-template<typename datatype>   //定义模板类seqstack
-class seqstack
+template<typename DataType>   //定义模板类SeqStack
+class SeqStack
 {
 public:
-	seqstack();   //构造函数，初始化空栈
-	~seqstack();	//析构函数
-	void push(datatype x);	//压栈
-	datatype pop();	//出栈
-	datatype gettop();//取栈顶
-	datatype toptop();//取栈顶下标
+	SeqStack();   //构造函数，初始化空栈
+	~SeqStack();	//析构函数
+	void Push(DataType x);	//压栈
+	DataType Pop();	//出栈
+	DataType GetTop();//取栈顶
+	DataType TopTop();//取栈顶下标
 	int empty();	//判空操作
 private:
-	datatype data[stacksize];	//存放栈元素的数组
+	DataType data[StackSize];	//存放栈元素的数组
 	int top;	//栈顶元素的下标
 };
 
-
-template<typename datatype>
-seqstack<datatype>::~seqstack()
+template<typename DataType>
+SeqStack<DataType>::~SeqStack()
 {
 
 }
 
-template<typename datatype>
-void seqstack<datatype>::push(datatype x)
+template<typename DataType>
+void SeqStack<DataType>::Push(DataType x)
 {
-	top++;
-	data[top] = x;
+	if (top == StackSize -1 )
+	{
+		cout << "栈满" << endl;
+	}
+	else
+	{
+		top++;
+		data[top] = x;s
+	}
+
 }
 
-template<typename datatype>
-datatype seqstack<datatype>::pop()
+template<typename DataType>
+DataType SeqStack<DataType>::Pop()
 {
-	datatype x;
-	x = data[top];
-	top--;
-	return x;
+	if (top == -1 )
+	{
+		cout << "栈空" << endl;
+	}
+	else
+	{
+		DataType x;
+		x = data[top];
+		top--;
+		return x;
+	}
 }
 
-template<typename datatype>
-datatype seqstack<datatype>::gettop()
+template<typename DataType>
+DataType SeqStack<DataType>::GetTop()
 {
-	return data[top];
+	if (top == -1 )
+	{
+		cout << "栈空" << endl;
+	}
+	else
+	{
+		return data[top];
+	}
+
 }
 
-template<typename datatype>
-int seqstack<datatype>::empty()
+template<typename DataType>
+int SeqStack<DataType>::empty()
 {
 	if (top == -1)
 	{
@@ -80,56 +102,35 @@ int seqstack<datatype>::empty()
 	}
 }
 
-template<typename datatype>
-datatype seqstack<datatype>::toptop()
+template<typename DataType>
+DataType SeqStack<DataType>::TopTop()
 {
 	return	top;
 }
 
-template<typename datatype>
-seqstack<datatype>::seqstack()
+template<typename DataType>
+SeqStack<DataType>::SeqStack()
 {
 	top = -1;
 }
-    /*
-                   _ooOoo_
-                  o8888888o
-                  88" . "88
-                  (| -_- |)
-                  O\  =  /O
-               ____/`---'\____
-            .'  \\|     |//  `.
-            /  \\|||  :  |||//  \
-           /  _||||| -:- |||||-  \
-           |   | \\\  -  /// |   |
-           | \_|  ''\---/''  |   |
-           \  .-\__  `-`  ___/-. /
-         ___`. .'  /--.--\  `. . __
-      ."" '<  `.___\_<|>_/___.'  >'"".
-     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-     \  \ `-.   \_ __\ /__ _/   .-` /  /
-======`-.____`-.___\_____/___.-`____.-'======
-                   `=---='
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    佛祖保佑       永不宕机     永无BUG
-*/
+
 
 int main()
 {
 	int ws1 = 0;
-	seqstack<int> S{};//定义顺序栈变量
-	S.push(1);
-	S.push(2);
-	S.push(3); 
+	SeqStack<int> S{};//定义顺序栈变量
+	S.Push(1);
+	S.Push(2);
+	S.Push(3); 
 	cout << "系统已压栈1,2,3" << endl;
 	cout << "输入一个元素进行压栈" << endl;
 	cin >> ws1;
-	S.push(ws1);
-	cout << "当前栈顶元素为：" << S.gettop() << endl;
+	S.Push(ws1);
+	cout << "当前栈顶元素为：" << S.GetTop() << endl;
 	cout << "*****************" << endl;
 	cout << "执行一次出栈操作" << endl;
-	cout << "已释放" << S.pop() << endl;
-	cout << "当前栈顶元素为：" << S.gettop() << endl;
+	cout << "已释放" << S.Pop() << endl;
+	cout << "当前栈顶元素为：" << S.GetTop() << endl;
 	cout << "*****************" << endl;
 	cout << "执行一次判空操作" << endl;
 	if (S.empty() == 1)
@@ -142,9 +143,9 @@ int main()
 	}
 	cout << "*****************" << endl;
 	cout << "正在出所有栈" << endl;
-	for (int i = S.toptop(); i > -1 ; i--)
+	for (int i = S.TopTop(); i > -1 ; i--)
 	{
-		cout << "已释放" << S.pop() << endl;
+		cout << "已释放" << S.Pop() << endl;
 	}
 	cout << "已释放出所有栈" << endl;
 	cout << "*****************" << endl;
@@ -169,124 +170,115 @@ int main()
 #include <iostream>
 using namespace std;
 
-template <typename datatype>
-struct node
+template <typename DataType>
+struct Node
 {
-    datatype data;
-    node<datatype>* next;
+    DataType data;
+    Node<DataType>* next;
 };
 
-template <typename datatype>
-class linkstack
+template <typename DataType>
+class LinkStack
 {
 public:
-    linkstack();
-    ~linkstack();
-    void push(datatype x);  //入栈
-    datatype pop();     //出栈
-    datatype gettop();  //取栈顶
-    int empty();        //判空
+    LinkStack();
+    ~LinkStack();
+    void Push(DataType x);  //入栈
+    DataType Pop();     //出栈
+    DataType GetTop();  //取栈顶
+    int Empty();        //判空
 private:
-    node<datatype>* top;
+    Node<DataType>* top;
 };
 
-template <typename datatype>
-linkstack<datatype>::linkstack()
+template <typename DataType>
+LinkStack<DataType>::LinkStack()
 {
     top = nullptr;
 }
 
-template <typename datatype>
-linkstack<datatype>::~linkstack()
+template <typename DataType>
+LinkStack<DataType>::~LinkStack()
 {
     cout << "程序退出，析构函数被调用!" << endl;
-    while (!empty())
+    while (!Empty())
     {
-        cout << "出栈元素：" << pop() << endl;
+        cout << "出栈元素：" << Pop() << endl;
     }
     cout << "程序退出链栈已清空!" << endl;
 }
 
-template <typename datatype>
-datatype linkstack<datatype> ::gettop()
+template <typename DataType>
+DataType LinkStack<DataType> ::GetTop()
 {
     if (top == nullptr)
-        throw "下溢异常";
+        cout << "下溢异常" << endl;
     else
         return top->data;
 }
 
 
-template <typename datatype>
-void linkstack<datatype> ::push(datatype x)
+template <typename DataType>
+void LinkStack<DataType> ::Push(DataType x)
 {
-    node<datatype>* s = nullptr;
-    s = new node<datatype>;
+    Node<DataType>* s = nullptr;
+    s = new Node<DataType>;
     s->data = x; //申请结点s数据域为x
     s->next = top;
     top = s; //将结点s插在栈顶
 }
 
-template <typename datatype>
-datatype linkstack<datatype> ::pop()
+template <typename DataType>
+DataType LinkStack<DataType> ::Pop()
 {
-    node<datatype>* p = nullptr;
-    datatype x;
-    if (top == nullptr) throw "下溢";
-    x = top->data; p = top; //暂存栈顶元素
-    top = top->next; //将栈顶结点摘链
-    delete p;
-    return x;
+    Node<DataType>* p = nullptr;
+    DataType x;
+    if (top == nullptr)
+    {
+        cout << "栈空" << endl;
+    }
+    else
+    {
+        x = top->data; p = top; //暂存栈顶元素
+        top = top->next; //将栈顶结点摘链
+        delete p;
+        return x;
+    }
 }
 
-template <typename datatype>
-int linkstack<datatype>::empty()
+template <typename DataType>
+int LinkStack<DataType>::Empty()
 {
-    if (top == nullptr) return 1;
-    return 0;
+    if (top == nullptr)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+
 }
 
-    /*
-                   _ooOoo_
-                  o8888888o
-                  88" . "88
-                  (| -_- |)
-                  O\  =  /O
-               ____/`---'\____
-            .'  \\|     |//  `.
-            /  \\|||  :  |||//  \
-           /  _||||| -:- |||||-  \
-           |   | \\\  -  /// |   |
-           | \_|  ''\---/''  |   |
-           \  .-\__  `-`  ___/-. /
-         ___`. .'  /--.--\  `. . __
-      ."" '<  `.___\_<|>_/___.'  >'"".
-     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-     \  \ `-.   \_ __\ /__ _/   .-` /  /
-======`-.____`-.___\_____/___.-`____.-'======
-                   `=---='
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    佛祖保佑       永不宕机     永无BUG
-*/
 int main()
 {
     int ws1 = 0;
-    linkstack<int> S{};//定义顺序栈变量S
-    S.push(1);
-    S.push(2);
-    S.push(3);
+    LinkStack<int> S{};//定义顺序栈变量S
+    S.Push(1);
+    S.Push(2);
+    S.Push(3);
     cout << "系统已压栈1,2,3" << endl;
     cout << "输入一个元素进行压栈" << endl;
     cin >> ws1;
-    S.push(ws1);
-    cout << "当前栈顶元素为：" << S.gettop() << endl;
+    S.Push(ws1);
+    cout << "当前栈顶元素为：" << S.GetTop() << endl;
     cout << "*****************" << endl;
     cout << "执行一次出栈操作" << endl;
-    cout << "已释放" << S.pop() << endl;
-    cout << "当前栈顶元素为：" << S.gettop() << endl;
+    cout << "已释放" << S.Pop() << endl;
+    cout << "当前栈顶元素为：" << S.GetTop() << endl;
     cout << "*****************" << endl;
     cout << "执行一次判空操作" << endl;
-    if (S.empty() == 1)
+    if (S.Empty() == 1)
     {
         cout << "栈空" << endl;
     }
@@ -296,14 +288,14 @@ int main()
     }
     cout << "*****************" << endl;
     cout << "正在出所有栈" << endl;
-    while (S.empty() != 1)
+    while (S.Empty() != 1)
     {
-        cout << "已释放" << S.pop() << endl;
+        cout << "已释放" << S.Pop() << endl;
     }
     cout << "已释放出所有栈" << endl;
     cout << "*****************" << endl;
     cout << "执行一次判空操作" << endl;
-    if (S.empty() == 1)
+    if (S.Empty() == 1)
     {
         cout << "栈空" << endl;
     }
@@ -321,56 +313,78 @@ int main()
 #include<iostream>
 using namespace std;
 
-const int queuesize = 100; //最大长度
-template <typename datatype>
-class cirqueue
+const int QueueSize = 100; //最大长度
+template <typename DataType>
+class CirQueue
 {
 public:
-	cirqueue();
-	~cirqueue();
-	void enqueue(datatype x);//入队
-	datatype dequeue();//出队
-	datatype getqueue();//取队头
-	int empty();//判空操作
+	CirQueue();
+	~CirQueue();
+	void EnQueue(DataType x);//入队
+	DataType DeQueue();//出队
+	DataType GetQueue();//取队头
+	int Empty();//判空操作
 private:
-	datatype data[queuesize];//存放需要的数组
+	DataType data[QueueSize];//存放需要的数组
 	int front, rear;//队头和队尾指针
 };
 
-template<typename datatype>
-cirqueue<datatype>::cirqueue()
+template<typename DataType>
+CirQueue<DataType>::CirQueue()
 {
-	rear = front = queuesize - 1;
+	rear = front = QueueSize - 1;
 }
 
-template<typename datatype>
-cirqueue<datatype>::~cirqueue()
+template<typename DataType>
+CirQueue<DataType>::~CirQueue()
 {
 
 }
 
-template<typename datatype>
-void cirqueue<datatype>::enqueue(datatype x)
+template<typename DataType>
+void CirQueue<DataType>::EnQueue(DataType x)
 {
-	rear = (rear + 1) % queuesize; //队尾指针+1
-	data[rear] = x;			//在队尾插入元素
+	if ((rear+1)%QueueSize==front)
+	{
+		cout << "队满" << endl;
+	}
+	else
+	{
+		rear = (rear + 1) % QueueSize; //队尾指针+1
+		data[rear] = x;			//在队尾插入元素
+	}
 }
 
-template<typename datatype>
-datatype cirqueue<datatype>::dequeue()
+template<typename DataType>
+DataType CirQueue<DataType>::DeQueue()
 {
-	front = (front + 1) % queuesize;
-	return data[front];
+	if ((rear + 1)%QueueSize==front )
+	{
+		cout << "队空" << endl;
+	}
+	else
+	{
+		front = (front + 1) % QueueSize;
+		return data[front];
+	}
 }
 
-template<typename datatype>
-datatype cirqueue<datatype>::getqueue()
+template<typename DataType>
+DataType CirQueue<DataType>::GetQueue()
 {
-	return data[(front + 1) % queuesize];
+	if (front == rear)
+	{
+		cout << "队空" << endl;
+	}
+	else
+	{
+		return data[(front + 1) % QueueSize];
+	}
+	
 }
 
-template<typename datatype>
-int cirqueue<datatype>::empty()
+template<typename DataType>
+int CirQueue<DataType>::Empty()
 {
 	if (front == rear)
 	{
@@ -384,24 +398,24 @@ int cirqueue<datatype>::empty()
 
 int main()
 {
-	cirqueue<int> S{};
+	CirQueue<int> S{};
 	int x = 0;
-	S.enqueue(1);
-	S.enqueue(2);
-	S.enqueue(3);
+	S.EnQueue(1);
+	S.EnQueue(2);
+	S.EnQueue(3);
 	cout << "已入队1,2,3" << endl;
 	cout << "******取一次队头******" << endl;
-	cout << "队头是：" << S.getqueue() << endl;
+	cout << "队头是：" << S.GetQueue() << endl;
 	cout << "请输入一个元素进行入队" << endl;
 	cin >> x;
-	S.enqueue(x);
+	S.EnQueue(x);
 	cout << "已入队：" << x << endl;
 	cout << "******取一次队头******" << endl;
-	cout << "队头是：" << S.getqueue() << endl;
+	cout << "队头是：" << S.GetQueue() << endl;
 	cout << "******执行一次出队******" << endl;
-	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
 	cout << "*****进行一次判空*****" << endl;
-	if (S.empty() == 1)
+	if (S.Empty() == 1)
 	{ 
 		cout << "队列空" << endl;
 	}
@@ -409,11 +423,11 @@ int main()
 	{
 		cout << "队列非空" << endl;
 	}
-	cout << "已出队：" << S.dequeue() << endl;
-	cout << "已出队：" << S.dequeue() << endl;
-	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
 	cout << "*****进行一次判空*****" << endl;
-	if (S.empty() == 1)
+	if (S.Empty() == 1)
 	{
 		cout << "队列空" << endl;
 	}
@@ -431,41 +445,41 @@ int main()
 #include<iostream>
 using namespace std;
 
-template<typename datatype>
+template<typename DataType>
 struct node
 {
-	datatype data;
-	node<datatype>* next;
+	DataType data;
+	node<DataType>* next;
 };
 
-template<typename datatype>
-class linkqueue
+template<typename DataType>
+class LinkQueue
 {
 public:
-	linkqueue();
-	~linkqueue();
-	void enqueue(datatype x);
-	datatype dequeue();
-	datatype getqueue();
-	int empty();
+	LinkQueue();
+	~LinkQueue();
+	void enQueue(DataType x);
+	DataType DeQueue();
+	DataType GetQueue();
+	int Empty();
 private:
-	node<datatype>* front, * rear;
+	node<DataType>* front, * rear;
 };
 
-template<typename datatype>
-linkqueue<datatype>::linkqueue()
+template<typename DataType>
+LinkQueue<DataType>::LinkQueue()
 {
-	node<datatype>* s = nullptr;
-	s = new node<datatype>;//开辟空间
+	node<DataType>* s = nullptr;
+	s = new node<DataType>;//开辟空间
 	s->next = nullptr;
 	front = rear = s;
 
 }
 
-template<typename datatype>
-linkqueue<datatype>::~linkqueue()
+template<typename DataType>
+LinkQueue<DataType>::~LinkQueue()
 {
-	node<datatype>* q = nullptr;
+	node<DataType>* q = nullptr;
 	while (front != nullptr)
 	{
 		q = front;
@@ -474,37 +488,51 @@ linkqueue<datatype>::~linkqueue()
 	}
 }
 
-template<typename datatype>
-void linkqueue<datatype>::enqueue(datatype x)
+template<typename DataType>
+void LinkQueue<DataType>::enQueue(DataType x)
 {
-	node<datatype>* s = nullptr;
-	s = new node<datatype>;
+	node<DataType>* s = nullptr;
+	s = new node<DataType>;
 	s->data = x;
 	s->next = nullptr;
 	rear->next = s;	//插入到队尾
 	rear = s;		//移动队尾
 }
 
-template<typename datatype>
-datatype linkqueue<datatype>::dequeue()
+template<typename DataType>
+DataType LinkQueue<DataType>::DeQueue()
 {
-	datatype x;
-	node<datatype>* p = nullptr;
-	p = front->next;
-	x = p->data;
-	front->next = p->next;
-	delete p;
-	return x;
+	DataType x;
+	node<DataType>* p = nullptr;
+	if (reat==front )
+	{
+		cout << "队空" << endl;
+	}
+	else
+	{
+		p = front->next;
+		x = p->data;
+		front->next = p->next;
+		delete p;
+		return x;
+	}
 }
 
-template<typename datatype>
-datatype linkqueue<datatype>::getqueue()
+template<typename DataType>
+DataType LinkQueue<DataType>::GetQueue()
 {
-	return front->next->data;
+	if (front == rear)
+	{
+		cout << "队空" << endl;
+	}
+	else
+	{
+		return front->next->data;
+	}
 }
 
-template<typename datatype>
-int linkqueue<datatype>::empty()
+template<typename DataType>
+int LinkQueue<DataType>::Empty()
 {
 	if (front == rear )
 	{
@@ -519,23 +547,23 @@ int linkqueue<datatype>::empty()
 int main()
 {
 	int x;
-	linkqueue<int> S = {};
-	S.enqueue(1);
-	S.enqueue(2);
-	S.enqueue(3);
+	LinkQueue<int> S = {};
+	S.enQueue(1);
+	S.enQueue(2);
+	S.enQueue(3);
 	cout << "已入队1,2,3" << endl;
 	cout << "******取一次队头******" << endl;
-	cout << "队头是：" << S.getqueue() << endl;
+	cout << "队头是：" << S.GetQueue() << endl;
 	cout << "请输入一个元素进行入队" << endl;
 	cin >> x;
-	S.enqueue(x);
+	S.enQueue(x);
 	cout << "已入队：" << x << endl;
 	cout << "******取一次队头******" << endl;
-	cout << "队头是：" << S.getqueue() << endl;
+	cout << "队头是：" << S.GetQueue() << endl;
 	cout << "******执行一次出队******" << endl;
-	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
 	cout << "*****进行一次判空*****" << endl;
-	if (S.empty() == 1)
+	if (S.Empty() == 1)
 	{
 		cout << "队列空" << endl;
 	}
@@ -543,11 +571,11 @@ int main()
 	{
 		cout << "队列非空" << endl;
 	}
-	cout << "已出队：" << S.dequeue() << endl;
-	cout << "已出队：" << S.dequeue() << endl;
-	cout << "已出队：" << S.dequeue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
+	cout << "已出队：" << S.DeQueue() << endl;
 	cout << "*****进行一次判空*****" << endl;
-	if (S.empty() == 1)
+	if (S.Empty() == 1)
 	{
 		cout << "队列空" << endl;
 	}
