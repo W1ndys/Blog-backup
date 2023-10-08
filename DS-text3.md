@@ -7,9 +7,33 @@ password: 5252why
 
 ---
 
+> 已完结
+>
 > 声明：仅供留档查阅，仅用作起到提示引导性作用，仅用作学习交流，切勿直接照搬
 
 ![](https://cyberdownload.anrunlu.net/FruAGRXClw43THvg6TkSyPl_4S3q)
+
+# 实验原理
+
+1. **顺序栈**：顺序栈是一种基于数组实现的栈。它通过一个数组和一个栈顶指针实现。当有新元素入栈时，将新元素放在数组的末尾，并将栈顶指针向后移动一位。当需要出栈时，直接返回栈顶元素，并将栈顶指针向前移动一位。
+2. **链式栈**：链式栈是一种基于链表实现的栈。它通过一个链表和一个头节点实现。当有新元素入栈时，将新元素插入到链表的头部，并更新头节点。当需要出栈时，直接返回头节点所指向的节点，并让头节点指向下一个节点。
+3. **循环队列**：循环队列是一种特殊的队列，它在逻辑上是环形的。循环队列使用一个数组和两个指针（一个头指针和一个尾指针）来实现。当元素入队时，尾指针向前移动并添加新元素；当元素出队时，头指针向前移动。当尾指针到达数组的末尾时，它会从数组的开始继续。
+4. **链式队列**：链式队列是基于单链表实现的队列。它使用一个单链表和两个指针（一个头指针和一个尾指针）来实现。当元素入队时，新元素被添加到链表的尾部，并更新尾指针；当元素出队时，头部的元素被移除，并更新头指针
+
+# 实验内容和步骤
+
+1. **顺序栈**：
+   - 入栈：将新元素放在数组的末尾，并将栈顶指针向后移动一位。
+   - 出栈：返回栈顶元素，并将栈顶指针向前移动一位。
+2. **链式栈**：
+   - 入栈：将新元素插入到链表的头部，并更新头节点。
+   - 出栈：返回头节点所指向的节点，并让头节点指向下一个节点。
+3. **循环队列**：
+   - 入队：尾指针向前移动并添加新元素。
+   - 出队：头指针向前移动。当尾指针到达数组的末尾时，它会从数组的开始继续。
+4. **链式队列**：
+   - 入队：新元素被添加到链表的尾部，并更新尾指针。
+   - 出队：头部的元素被移除，并更新头指针。
 
 # 代码主体
 
@@ -587,9 +611,128 @@ int main()
 }
 ```
 
-5. 十进制转换为二至九进制之间的任一进制的算法实现：
+## 十进制转换为二至九进制之间的任一进制的算法实现：
 
+> 这里有一个细节就是，任何数转化为任何进制，最后整除取整的结果都是0，而最后一次压栈是无法在循环里压栈（在这个算法里），需要在循环外再写一行压栈，把最后一个进制数压进去（也就是输出结果的第一位）
+
+```c++
+/*十进制转化为其他进制，实际上是做取余然后逆序输出运算，可以用顺序栈实现功能*/
+#include <iostream>
+using namespace std;
+const int StackSize = 10000;  // 定义最大栈顶具体情况具体分析
+
+template<typename DataType>   //定义模板类SeqStack
+class SeqStack
+{
+public:
+	SeqStack();   //构造函数，初始化空栈
+	~SeqStack();	//析构函数
+	void Push(DataType x);	//压栈
+	DataType Pop();	//出栈
+	DataType GetTop();//取栈顶
+	int empty();	//判空操作
+private:
+	DataType data[StackSize];	//存放栈元素的数组
+	int top;	//栈顶元素的下标
+};
+
+template<typename DataType>
+SeqStack<DataType>::~SeqStack()
+{
+
+}
+
+template<typename DataType>
+void SeqStack<DataType>::Push(DataType x)
+{
+	if (top == StackSize - 1)
+	{
+		cout << "栈满" << endl;
+	}
+	else
+	{
+		top++;
+		data[top] = x;
+	}
+
+}
+
+template<typename DataType>
+DataType SeqStack<DataType>::Pop()
+{
+	if (top == -1)
+	{
+		cout << "栈空" << endl;
+	}
+	else
+	{
+		DataType x;
+		x = data[top];
+		top--;
+		return x;
+	}
+}
+
+template<typename DataType>
+DataType SeqStack<DataType>::GetTop()
+{
+	if (top == -1)
+	{
+		cout << "栈空" << endl;
+	}
+	else
+	{
+		return data[top];
+	}
+
+}
+
+template<typename DataType>
+int SeqStack<DataType>::empty()
+{
+	if (top == -1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+template<typename DataType>
+SeqStack<DataType>::SeqStack()
+{
+	top = -1;
+}
+
+int main()
+{
+	SeqStack<int> s = {};
+	int x, y, count = 1;
+	cout << "请按顺序输入你想转化的十进制数，和目标进制（2-9），以空格隔开" << endl;
+	cin >> x >> y;
+	while ((x/y) != 0)
+	{
+		cout <<"入栈" << x % y << endl;
+		s.Push(x % y);
+		count++;
+		x /= y;
+	}
+	s.Push(x % y);
+	cout << "入栈" << x % y << endl;
+	cout <<"************************" << endl;
+	cout << "转换后的结果是";
+	while (count!=0)
+	{
+		cout<<s.Pop();
+		count--;
+	}
+	cout << endl;
+	cout << "************************" << endl;
+	return 0;
+}
 ```
-我跑路了
-```
+
+
 
