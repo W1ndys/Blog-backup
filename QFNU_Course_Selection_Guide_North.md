@@ -1288,7 +1288,7 @@ END
 
 # 想赞助我？
 
-爱发电链接https://afdian.net/a/W1ndys
+https://z1.ax1x.com/2023/10/08/pPvix0S.jpg
 
 随意赞助，不绑架，打多少都行
 
