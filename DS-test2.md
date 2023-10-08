@@ -9,7 +9,7 @@ password: 5252why
 
 > 声明：仅供留档查阅，仅用作起到提示引导性作用，仅用作学习交流，切勿直接照搬
 
-<a href="https://cyberdownload.anrunlu.net/FlO6Qn0cVLJHriuYzOv453gkwMYY"><img src="https://cyberdownload.anrunlu.net/FlO6Qn0cVLJHriuYzOv453gkwMYY" alt="pPvix0S.jpg" border="0" />
+![](https://cyberdownload.anrunlu.net/FlO6Qn0cVLJHriuYzOv453gkwMYY)
 
 # 代码主体
 
