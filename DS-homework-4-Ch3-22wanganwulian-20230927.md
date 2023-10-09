@@ -38,7 +38,9 @@ password: 5252why
 
 # Ch3-3. 假设以带头结点的循环单链表表示队列，并且只设一个尾指针Node*Rear 指向队尾结点（没有队头指针Node *front），试编写入队和出队算法。
 
-> 自己写的，目前还在报错，修改中……
+> 自己写的，~~目前还在报错，修改中……~~
+>
+> 已完工
 
 ```C++
 #include <iostream>                  //引入输入输出流
@@ -56,7 +58,6 @@ class LinkList_Queue
 {
 public:
     LinkList_Queue();                      //无参构造函数，建立只有头结点的空链表
-    LinkList_Queue(DataType a[], int n);       //有参构造函数，建立有n个元素的单链表
     ~LinkList_Queue();                     //析构函数
     int Empety();
     DataType Push(DataType x);       //插入操作，第i个位置插入值为x的结点
@@ -83,53 +84,44 @@ LinkList_Queue<DataType> :: ~LinkList_Queue()
 template <typename DataType>
 int LinkList_Queue<DataType> ::Empety()
 {
-    if (first->next == nullptr)
+    if (first == rear)
         return 1;
     else
         return 0;
 }
 
 
-
+//入队算法
 template <typename DataType>
 DataType LinkList_Queue<DataType> ::Push(DataType x)
 {
-    Node<DataType>* r = first, * s = nullptr;           //尾指针初始化
-    s = new Node<DataType>; s->data = x;
-    r->next = s; r = s;                 //将结点s插入到终端结点之后
+    Node<DataType>* s = nullptr;           
+    s = new Node<DataType>; 
+    s->data = x;
+    s->next = nullptr;
+    rear->next = s;
     rear = s;
-    r->next = nullptr;
     return x;
 }
 
-//尾插法构造
-template <typename DataType>
-LinkList_Queue<DataType> ::LinkList_Queue(DataType a[], int n)
-{
-    first = new Node<DataType>;                    //生成头结点
-    Node<DataType>* r = first, * s = nullptr;           //尾指针初始化
-    for (int i = 0; i < n; i++)
-    {
-        s = new Node<DataType>; s->data = a[i];
-        r->next = s; r = s;                 //将结点s插入到终端结点之后
-    }
-    r->next = nullptr;        //单链表建立完毕，将终端结点的指针域置空
-}
-
+//出队算法
 template <typename DataType>
 DataType LinkList_Queue<DataType> ::Pop()
 {
     if (first == rear )
     {
         cout << "队空" << endl;
+        return 0;
     }
     else
     {
         DataType x;
-        Node<DataType>* p = nullptr;
-        x = first->next->data;
-        p = first->next;
+        Node<DataType>* p = first->next;
+        x = p->data;
         first->next = p->next;
+        if (rear == p)  // 如果队列中只有一个元素
+            rear = first;  // 则需要更新尾指针
+        delete p;
         return x;
     }
 }
@@ -146,10 +138,11 @@ int main()
     cout << "已入队：" << s.Push(a) << endl;
     cout << "出队一次"<< endl;
     cout << "已出队：" << s.Pop() << endl;
-
+    cout << "已出队：" << s.Pop() << endl;
+    cout << "已出队：" << s.Pop() << endl;
+    cout << "已出队：" << s.Pop() << endl;
     return 0;
 }
-
 ```
 
 
