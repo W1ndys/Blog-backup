@@ -116,7 +116,7 @@ ps:请大家看一下这个项目[曲阜师范大学选课指北项目 - hi！�
 
 很遗憾，无线网络以及网线并不是宿舍标配，建议和舍友商量好是否要扯网线后去校内移动营业厅咨询相关费用。（自北公寓搬到新校区以后，目前来看校内已不允许拉网线）如果使用学校配发的手机卡的话，还可以去校内移动营业厅办理校园网业务，手机可以直连校园网。另外关于校园网，没有选课必须用的说法(如果必须用校园网才能选课的话那22级疫情延期开学在家里选课怎么解释)，目前来看一学期一两次的心理测试是需要校园网的，其余无限制，借一个就行，不想欠情分去群里找个人一两块租一个也行。办不办校园网还是看个人所需
 
-![关于校园网设备_图源:22文院吉祥物鼠鼠](https://s1.ax1x.com/2023/09/12/pPg5jP0.md.jpg)
+![关于校园网设备_图源:22文院吉祥物鼠鼠](https://uploader.shimo.im/f/E3yi6N1Xyvj9Mfw5.jpg!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAwMjIsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTcyMiwiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.TnkzAtc0uXzoXQ9oloBrMe7ZMlPOOyDLmvidV_WpJ4s)
 
 ## 3、宿舍收水电费嘛？
 
@@ -274,7 +274,7 @@ PS：【门口告示写的是到晚上6；30，阿姨说不会那么早关门】
 
 (5)生活区北门雅迪：13853775048
 
-[查看原图](https://z1.ax1x.com/2023/09/16/pPfu08e.png)
+[查看原图](https://uploader.shimo.im/f/tlb4r6xBvooGBJKz.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAxNzMsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTg3MywiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.-BZx1qod0Q4dBLebfkQ5jLHOLBs6tfHEEABrCUEIyEQ)
 
 # 六、北门药店营业时间
 
@@ -294,21 +294,22 @@ PS：【门口告示写的是到晚上6；30，阿姨说不会那么早关门】
 
 7. 生活区北门同志大药店：7:30-22:00**【联系电话：15864131314】**
 
- [查看原图](https://z1.ax1x.com/2023/09/16/pPfuwCD.png)
+ [查看原图](https://uploader.shimo.im/f/EpldVNN9yrgrZXVS.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAxNzMsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTg3MywiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.-BZx1qod0Q4dBLebfkQ5jLHOLBs6tfHEEABrCUEIyEQ)
 
 # 七、曲阜师范大学作息时间表
 
-![图源_22文院吉祥物鼠鼠](https://s1.ax1x.com/2023/09/12/pPgy0O0.md.jpg)
+![图源_22文院吉祥物鼠鼠](https://uploader.shimo.im/f/APJa5jETNkbReE84.jpg!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAxNzMsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTg3MywiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.-BZx1qod0Q4dBLebfkQ5jLHOLBs6tfHEEABrCUEIyEQ)
 
 # 八、校区地图
 
-<center>
-	<img src="https://s1.ax1x.com/2023/09/12/pPgsjdU.jpg" alt="曲阜老校区地图1" style="zoom:25%;" />
-    <img src="https://s1.ax1x.com/2023/09/12/pPgsvoF.jpg" alt="曲阜老校区地图2" style="zoom:25%;" />
-    <img src="https://s1.ax1x.com/2023/09/12/pPgszi4.jpg" alt="曲阜新校区地图1" style="zoom:25%;" />
-    <img src="https://s1.ax1x.com/2023/09/12/pPgsXZT.jpg" alt="曲阜新校区地图2_图源:22文院吉祥物鼠鼠" style="zoom:25%;" />
-    <img src="https://s1.ax1x.com/2023/09/12/pPgsLLV.jpg" alt="日照校区地图_图源:颜珞" style="zoom:25%;" />
-</center>
+![曲阜1](https://uploader.shimo.im/f/VEY2eIQK9ezCPASB.jpg!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAwMjIsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTcyMiwiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.TnkzAtc0uXzoXQ9oloBrMe7ZMlPOOyDLmvidV_WpJ4s)
+
+![曲阜2](https://uploader.shimo.im/f/4aGHIa14MZeaYDKe.jpg!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAwMjIsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTcyMiwiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.TnkzAtc0uXzoXQ9oloBrMe7ZMlPOOyDLmvidV_WpJ4s)
+
+![曲阜3](https://uploader.shimo.im/f/3BSypBln8LOmlXcd.jpg!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAwMjIsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTcyMiwiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.TnkzAtc0uXzoXQ9oloBrMe7ZMlPOOyDLmvidV_WpJ4s)
+
+![日照校区](https://uploader.shimo.im/f/3O13DqJy7uGiF7qO.jpg!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2OTY5NTAwMjIsImZpbGVHVUlEIjoiNDczUU1OZExwbWY0OEszdyIsImlhdCI6MTY5Njk0OTcyMiwiaXNzIjoidXBsb2FkZXJfYWNjZXNzX3Jlc291cmNlIiwidXNlcklkIjo4Njg4MjYwOH0.TnkzAtc0uXzoXQ9oloBrMe7ZMlPOOyDLmvidV_WpJ4s)
+
 
 
 # 九、曲阜师范大学相关链接
@@ -348,16 +349,11 @@ PS：【门口告示写的是到晚上6；30，阿姨说不会那么早关门】
 [曲阜师范大学培养方案讲解一_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Sw411i7iP/?share_source=copy_web&vd_source=e8bb8e95b575ec9b96265a5fb293b364)
 
 
-<iframe src="//player.bilibili.com/player.html?bvid=BV1Sw411i7iP&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
 ## 曲阜师范大学培养方案讲解二
 
 [曲阜师范大学培养方案讲解二_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV19P411t7T2/?spm_id_from=333.788.recommend_more_video.-1&vd_source=e8bb8e95b575ec9b96265a5fb293b364)
-
-<iframe src="//player.bilibili.com/player.html?bvid=BV19P411t7T2&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ## 曲阜师范大学培养方案讲解（横版）
 
 [曲阜师范大学培养方案讲解（横版）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1CK4y1c7QQ/?spm_id_from=333.999.0.0&vd_source=e8bb8e95b575ec9b96265a5fb293b364)
 
-<iframe src="//player.bilibili.com/player.html?bvid=BV1CK4y1c7QQ&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
