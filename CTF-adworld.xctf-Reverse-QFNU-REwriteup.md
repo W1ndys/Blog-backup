@@ -25,7 +25,7 @@ categories:  [CTF,WP,RE]
 
 ## 解密
 
-滚去https://ctf.mzy0.com/CyberChef3/解密一下
+滚去https://ctf.mzy0.com/CyberChef3/    解密一下
 
 ![解密](https://z1.ax1x.com/2023/10/13/piSz8Wn.png)
 
