@@ -9,6 +9,25 @@ categories:  [CTF,工具]
 
 ## Python脚本
 
+### base64换表脚本
+
+```python
+import base64
+
+#str1是要解密的代码
+str1 = "5Mc58bPHLiAx7J8ocJIlaVUxaJvMcoYMaoPMaOfg15c475tscHfM/8=="
+
+#string1是改过之后的base64表
+string1 = "qvEJAfHmUYjBac+u8Ph5n9Od17FrICL/X0gVtM4Qk6T2z3wNSsyoebilxWKGZpRD" 
+
+string2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+
+print (base64.b64decode(str1.translate(str.maketrans(string1,string2))))
+
+
+#NSSCTF{a8d4347722800e72e34e1aba3fe914ae}
+```
+
 ### 变异凯撒脚本
 
 凯撒密码作为最古老的密码体制之一,相信大多数人都知道,即简单的移位操作,那么问题来了,变异的凯撒密码又会是什么呢?
@@ -129,8 +148,6 @@ ADFGX密码https://ctf.bugku.com/tool/adfgx
 TripleDes(3DES)https://ctf.bugku.com/tool/tripledes
 
 
-
-# 
 
 工具很多
 
