@@ -10,8 +10,6 @@ password: myj250
 >
 > 声明：仅供留档查阅，仅用作起到提示引导性作用，仅用作学习交流，切勿直接照搬
 
-![](/img/qfnu大门)
-
 ![](https://cyberdownload.anrunlu.net/FruAGRXClw43THvg6TkSyPl_4S3q)
 
 # 实验原理
