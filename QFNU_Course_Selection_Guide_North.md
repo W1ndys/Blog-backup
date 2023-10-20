@@ -825,6 +825,14 @@ https://w1ndys.github.io/2023/09/01/QFNU_Course_Selection_Guide_North/
 
 > 小熊威宁
 
+## 无处不在的地理魅力
+
+### ————曲阜————
+
+#### 苏庆华
+
+不建议
+
 ## 中国文学传统
 
 ### ————曲阜————

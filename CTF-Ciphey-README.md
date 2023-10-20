@@ -112,3 +112,9 @@ This command does many things:
 - "ciphey" is the name of the package we want to install.
 
 **Make sure you run this command in Terminal/CMD/PowerShell or whatever you use. Do not run this in Python's IDLE.**
+
+
+
+使用方法
+
+ciphey -t ""
