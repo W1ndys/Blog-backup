@@ -118,7 +118,7 @@ console.log(ff)
 
 频谱图
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/10-1698030045.png)
+![图片](https://mmbiz.qpic.cn/mmbiz_png/1kzx23sqO1nz24UjXb5ibcfVYTX22U5y9LhQMJ5ckD39pCTFzia8P9Tmsl9JrU906Q5pPF5Dw6DUwRnvqSNcQlPw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ### 数独
 
