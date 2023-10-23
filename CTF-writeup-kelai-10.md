@@ -10,7 +10,7 @@ categories:  [CTF,WP,第十届科来杯]
 
 赛制还是一如既往的奇葩，由于每人的方向不同，在赛后结合团队赛道和爱好者赛道社团成员的wp，共同完成了本文。
 
-@挽歌@sp4c1ous@Charshark@Mu.Chen
+@挽歌 @sp4c1ous @Charshark @Mu.Chen
 
 Mu.Chen内心os：
 
@@ -135,8 +135,6 @@ C:UsersAdministratorDesktopmisc脚本收集cloacked-pixel-master>python2 lsb.py 
 ![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/10-1698030048.png)
 
 提取出png，补上文件头，然后双图盲水印
-
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/3-1698030048.png)
 
 ![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/2-1698030049.png)
 
