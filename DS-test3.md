@@ -1,9 +1,9 @@
 ---
 title: 实验三、栈和队列的应用
-tags:  数据结构
+tags:  数据结构作业
 categories:  [学习笔记,数据结构作业,实验]
 message: 作业答案被加密了，快暴揍W1ndys让他说出密码(输完按回车解开)
-password: myj250
+ 
 ---
 
 > 已完结

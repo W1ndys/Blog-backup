@@ -2,8 +2,7 @@
 title: 大二iwrite英语作文
 tags:  英语
 categories:  [学习笔记,英语作业,作文]
-message: 作业答案被加密了，快暴揍W1ndys让他说出密码(输完按回车解开)
-password: myj250
+ 
 ---
 
 > 注意：内容全部为[bing ai](https://www.bing.com/search?q=bing+ai&aqs=edge.1.69i64i450l8.10337092j0j1&FORM=ANAB01&PC=NMTS&cc=us)生成，翻译是[百度翻译](https://fanyi.baidu.com/)机翻，统计是[Conding.Tools](https://coding.tools/cn/word-counter)技术支持

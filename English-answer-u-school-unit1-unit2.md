@@ -2,9 +2,7 @@
 title: 新标准大学英语（第二版）综合教程 第一册 Unit1-Unit2 U校园
 tags:  英语
 categories:  [学习笔记,英语作业,u校园答案]
-message: 作业答案被加密了，快暴揍W1ndys让他说出密码(输完按回车解开)
-password: myj666
-
+ 
 ---
 
 > 搬运自微信公众号：必修宝答案
