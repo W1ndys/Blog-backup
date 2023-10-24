@@ -3,7 +3,6 @@ title:  曲阜师范大学选课指北
 tags:  QFNU
 categories:  QFNU
 index_img:  /img/qfnu大门.jpg
-sticky:  9999999999
 
 ---
 
@@ -1296,7 +1295,7 @@ END
 
 # 想赞助我？
 
-https://z1.ax1x.com/2023/10/08/pPvix0S.jpg
+![](/img/选课/收款码.jpg)
 
 随意赞助，不绑架，打多少都行
 
