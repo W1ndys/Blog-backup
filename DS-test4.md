@@ -12,7 +12,6 @@ message: 作业答案被加密了，快暴揍W1ndys让他说出密码(输完按�
 
 ```c++
 #include <iostream>
-
 #include <string.h>
 #define MaxSize 1000
 #define MaxLen 1000
@@ -75,7 +74,7 @@ int KMP(SeqString s, SeqString t)
 {
 	int next[MaxLen], i = 0, j = 0;
 	GetNext(t, next); // 求next值
-	while (i < s.len && j < s.len)
+	while (i < s.len && j < t.len) // 修改这里
 	{
 		if (j == -1 || s.ch[i] == t.ch[j])
 		{
@@ -139,9 +138,82 @@ int main()
 	}
 	else
 	{
-		cout << "KMP算法结果：位置是：" << kmp << endl;
+		cout << "KMP算法结果：位置是：" << kmp + 1 << endl; // 返回的下标从1开始计数，所以需要+1
 	}
 	cout << "*******KMP算法实验*******" << endl;
+
+	return 0; // 确保main函数有返回值
 }
+```
+
+
+
+# 对称矩阵的压缩
+
+```c++
+#include <iostream>
+#define MaxSize 1000
+using namespace std;
+
+struct yuansu
+{
+	int i;
+	int j;
+	int data;
+};
+
+class Matrix
+{
+public:
+	Matrix();
+	void PrintMatrix();
+	void getMatrix(yuansu s);
+	~Matrix();
+
+private:
+	int ma[MaxSize];
+};
+
+Matrix::Matrix()
+{
+	for (int i = 0; i < MaxSize; i++)
+		ma[i] = 0;
+}
+
+Matrix::~Matrix()
+{
+}
+
+void Matrix::getMatrix(yuansu s)
+{
+	if (s.i >= s.j) {
+		int k = s.i * (s.i - 1) / 2 + s.j - 1;
+		ma[k] = s.data;
+	}
+}
+
+void Matrix::PrintMatrix()
+{
+	for (int i = 0; i < MaxSize; i++)
+		if (ma[i] != 0)
+			cout << "ma[" << i << "] = " << ma[i] << endl;
+}
+
+int main()
+{
+	Matrix ws;
+	yuansu s;
+	cin >> s.i >> s.j >> s.data;
+	ws.getMatrix(s);
+	ws.PrintMatrix();
+	cin >> s.i >> s.j >> s.data;
+	ws.getMatrix(s);
+	ws.PrintMatrix();
+	cin >> s.i >> s.j >> s.data;
+	ws.getMatrix(s);
+	ws.PrintMatrix();
+	return 0;
+}
+
 ```
 
