@@ -118,7 +118,7 @@ console.log(ff)
 
 频谱图
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/10-1698030045.png)
+![我应该去爱你](/img/科来杯10/我应该去爱你.png)
 
 ### 数独
 
@@ -130,21 +130,21 @@ console.log(ff)
 C:UsersAdministratorDesktopmisc脚本收集cloacked-pixel-master>python2 lsb.py extract C:UsersAdministratorDesktopmisc脚本收集cloacked-pixel-mastershudok.png-stego.png 1.txt 4132234132141423
 ```
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/5-1698030046.png)
+![数独](/img/科来杯10/数独.png)
 
 ### 莫生气
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/10-1698030048.png)
+![莫生气](/img/科来杯10/莫生气.png)
 
 提取出png，补上文件头，然后双图盲水印
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/2-1698030049.png)
+![莫生气2](/img/科来杯10/莫生气2.png)
 
 ## 取证
 
 ### 金刚大战哥斯拉
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/5-1698030051.png)
+![金刚大战哥斯拉](/img/科来杯10/哥斯拉.png)
 
 ```php
 <?php
@@ -164,19 +164,19 @@ $data = 'fLluZmFmNmExNJEhWBG1b1XhCY%2BtGO2uCp6t3zK69FxYTKJQssNT1y5Cf45Hu3u%2Fivq
 echo base64_encode(gzdecode(encode(base64_decode(urldecode($data)),$key)));
 ```
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/0-1698030052.png)
+![金刚大战哥斯拉2](/img/科来杯10/哥斯拉2.png)
 
 ### 啊吧啊吧的数据包
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/4-1698030053.png)
+![阿巴巴](/img/科来杯10/阿巴巴.png)
 
 命令的时间盲注，写脚本有点麻烦
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/1-1698030054.png)
+![阿巴巴2](/img/科来杯10/阿巴巴2.png)
 
 不如简单处理一下，然后手撕
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/6-1698030056.png)
+![阿巴巴3](/img/科来杯10/阿巴巴3.png)
 
 
 
@@ -186,7 +186,7 @@ flag{3563bdb1a59309e1a4e93b65152bfbba}
 
 取证大师提出个压缩包，备注是名字+生日，掩码爆破
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/4-1698030057.png)
+![小刘](/img/科来杯10/小刘.png)
 
 ## Web
 
@@ -214,14 +214,15 @@ test=O:4:"Test":1:{s:5:"check";S:6:"73dnisc";}&class[/flag]=SplFileObject
 
 ### 小试牛刀
 
+变异凯撒
+
 ```
-from Crypto.Util.number import *
-c=b'ipfmx82Kj]p~l?x82ogwx85mt[Kx8brx97'
-a=3
-flag=''
-for i in c:
-    flag+=chr(i-a)
-    a+=1
+enc = "ipfm\x82Kj]p~l?\x82ogw\x85mt[K\x8br\x97"
+k = 3
+flag = ""
+for i in enc:
+    flag += chr(ord(i) - k)
+    k += 1
 print(flag)
 ```
 
@@ -323,7 +324,7 @@ print(long_to_bytes(m))
 
 找到加密逻辑，跟着跑一边就是了
 
-![科来杯第十届山东省大学生网络安全技能大赛wp](http://cn-sec.com/wp-content/uploads/2023/10/6-1698030058.png)
+![人生模拟](/img/科来杯10/人生模拟.png)
 
 ```python
 v15=[0]*38
