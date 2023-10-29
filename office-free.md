@@ -5,6 +5,12 @@ categories:  [Windows,office]
 
 ---
 
+---
+
+<p class="note note-warning">这篇文章需要重写，有空再改改</p>
+
+----
+
 想必大家都认识Microsoft office
 
 就是常说的Word  Excel  PPT三大办公套件
