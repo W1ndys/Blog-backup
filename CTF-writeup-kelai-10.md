@@ -1,8 +1,6 @@
 ---
 title:  科来杯第十届山东省大学生网络安全技能大赛wp
-tags:  
-	- CTF省赛科来杯 
-	- CTF
+tags:  [CTF,科来杯]
 categories:  [CTF,WP,第十届科来杯]
 ---
 
