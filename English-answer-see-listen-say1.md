@@ -1,7 +1,7 @@
 ---
 title: 全新版大学进阶英语视听说教程1
 tags:  英语
-categories:  [学习笔记,英语作业,视听说答案]
+categories:  [学习笔记,英语答案,视听说答案]
 ---
 
 ![全新版大学进阶英语1［视听说教程答案］](https://pic1.zhimg.com/70/v2-70dfe84e14e832a21ea6b39277a9d837_1440w.image?source=172ae18b&biz_tag=Post)
