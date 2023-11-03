@@ -39,9 +39,9 @@ ps：[《曲阜师范大学日常问题汇总》](https://w1ndys.top/2023/08/25/
 
 **<u>十分建议用电脑浏览本站</u>**<font color=red><u>电脑可用Ctrl+f快捷键快速搜索定位，右侧有目录可以快速定位，手机可用浏览器页面搜索功能，请根据浏览器自行百度方法</u></font>
 
-链接可能会失效，加群 **497554955** 防迷路，更新专用QQ **482548878** ，关于相关通知在QQ或群发，建群初期，暂时关闭发言，注意本群无广告不引流，放心食用
+链接可能会失效，加群 **497554955** 防迷路，更新专用QQ **2769731875** ，关于相关通知在QQ或群发，建群初期，暂时关闭发言，注意本群无广告不引流，放心食用
 
-[点击加群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=qP4o9XIAfXSScCZHSAvxQhZzgh9VM7h2&authKey=gbuqiu94MMW%2B5jV%2BF4LkD%2FP5e4OQW3T5KFgi5arRciFQByXntTURRdG%2BJWtfonTW&noverify=0&group_code=497554955)----------------[点击联系QQ]( https://res.abeim.cn/api/qq/?qq=482548878)
+[点击加群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=qP4o9XIAfXSScCZHSAvxQhZzgh9VM7h2&authKey=gbuqiu94MMW%2B5jV%2BF4LkD%2FP5e4OQW3T5KFgi5arRciFQByXntTURRdG%2BJWtfonTW&noverify=0&group_code=497554955)----------------[点击联系QQ](https://qm.qq.com/q/9n506oZ8Ri&personal_qrcode_source=4)
 
 
 ---
