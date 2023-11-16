@@ -12,7 +12,7 @@ BabyRe和TEA两道题不多说了，扔进IDA直接出flag
 
 ## 日志里的FLAG
 
-> 膜拜naki!佬
+> 膜拜nakai!佬
 
 双写绕过
 
