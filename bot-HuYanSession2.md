@@ -1,5 +1,5 @@
 ---
-title: [壶言2]HuYanSession2——壶言会话2使用手册
+title: HuYanSession2——壶言会话2使用手册
 tags: QQbot
 categories: [QQbot]
 ---
