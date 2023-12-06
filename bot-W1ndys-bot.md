@@ -14,7 +14,7 @@ categories: [QQbot]
 
 [HuYanSession2——壶言会话2使用手册](https:##w1ndys.top#2023#11#17#bot-HuYanSession2###)
 
-MuteGames使用手册
+[MuteGames使用手册](https://w1ndys.top/2023/12/06/bot-MuteGames/#/)
 
 # 关键词回复
 
