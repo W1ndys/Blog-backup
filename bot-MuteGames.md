@@ -6,17 +6,17 @@ categories: [QQbot]
 
 # MuteGames
 
-一个以 [Mirai-Console](https:##github.com#mamoe#mirai) 为基础开发并为了满足群友PVP需求和抖M需求开发的禁言游戏集合
+一个以 [Mirai-Console](https://github.com/mamoe/mirai) 为基础开发并为了满足群友PVP需求和抖M需求开发的禁言游戏集合
 
 ## 开始使用
 
-插件需要以 [Mirai-Console](https:##github.com#mamoe#mirai)
+插件需要以 [Mirai-Console](https://github.com/mamoe/mirai)
 
-为基础，你可以下载 [MCL](https:##github.com#iTXTech#mirai-console-loader#releases) 作为你的Mirai插件载入器
+为基础，你可以下载 [MCL](https://github.com/iTXTech/mirai-console-loader/releases) 作为你的Mirai插件载入器
 
-与此同时，本插件需要 Mirai 官方插件 [chat-command](https:##github.com#project-mirai#chat-command)
+与此同时，本插件需要 Mirai 官方插件 
 
-使用之前请先用参考[权限节点](https:##github.com#EvolvedGhost#MuteGames#权限节点)来开启插件权限
+使用之前请先用参考[权限节点](#权限节点)来开启插件权限
 
 **请注意：当用户权限大于等于机器人所在权限时（如机器人是管理员用户为群主），机器人不会对游戏请求做任何回复**
 
@@ -30,8 +30,6 @@ categories: [QQbot]
  |  |- com.evolvedghost.mutegames:command.mg          MuteGams管理指令
  |  |- com.evolvedghost.mutegames:command.roulette    俄罗斯轮盘指令
 ```
-
-
 
 插件调用的是Mirai自带的权限管理系统，你可以在控制台输入`?`来获取帮助，通常权限的添加方式为：
 
@@ -104,4 +102,4 @@ Mirai版本在2.12以下的用户需要向下兼容包，本项目Release并不�
 
 ## 特别感谢
 
-[Mirai](https:##github.com#mamoe#mirai) 提供QQ机器人
+[Mirai](https://github.com/mamoe/mirai) 提供QQ机器人
