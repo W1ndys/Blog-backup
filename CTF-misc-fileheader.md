@@ -56,9 +56,9 @@ categories:  [CTF,MISC]
 PNG文件，我们会发现，文件的结尾12个字符看起来总应该是这样的：00 00 00 00 49 45 4E 44 AE 42 60 82
 不难明白，由于数据块结构的定义，IEND数据块的长度总是0（00 00 00 00，除非人为加入信息），数据标识总是IEND（49 45 4E 44），因此，CRC码也总是AE 42 60 82。
 
-![img](https://img-blog.csdnimg.cn/20201019175155622.png)![img](https://img-blog.csdnimg.cn/20201019175206371.png)
+![img](/img/file-header/20201019175155622.png)![img](/img/file-header/20201019175206371.png)
 
-![img](https://img-blog.csdnimg.cn/2020101917522518.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FodXV1YQ==,size_16,color_FFFFFF,t_70)
+![img](/img/file-header/1.png)
 
 给大家举个例子：
 
