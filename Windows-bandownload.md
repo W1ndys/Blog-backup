@@ -1,7 +1,7 @@
 ---
 title:  解决Windows11“为了对电脑进行保护，已经阻止此应用。”
-tags: 计算机
-categories: [学习笔记,计算机]
+tags: Windows技术分享
+categories: [Windows,报错]
 ---
 
 ![image-20231208221039318](/img/Windows/image-20231208221039318.png)

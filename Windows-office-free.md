@@ -1,7 +1,7 @@
 ---
 title:  如何安装Microsoft office各种版本以及破解||office盗版弹窗的关闭方法
 tags: Windows技术分享
-categories:  [Windows,office]
+categories:  [Windows,office破解]
 
 ---
 
