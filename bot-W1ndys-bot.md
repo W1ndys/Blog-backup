@@ -8,35 +8,29 @@ categories: [QQbot]
 # 主要功能
 
 卷卷目前的功能主要有：
-[关键词回复](#关键词回复)      [快捷群管理](#快捷群管理)     [违禁词监控](#违禁词监控)    [定时器](#定时器)     [AI对话](#AI对话)     [奇怪图片生成](#奇怪图片生成)     [点歌](#点歌)   [猜群友小游戏](#猜群友)
+[关键词回复](#关键词回复)      [快捷群管理](#快捷群管理)     [违禁词监控](#违禁词监控)    [定时器](#定时器)     [奇怪图片生成](#奇怪图片生成)     [点歌](#点歌)   [猜群友小游戏](#猜群友)
 
-[Mirai Administrator使用手册](https:##w1ndys.top#2023#11#20#bot-Mirai-Administrator###)
+[Mirai Administrator使用手册](https://w1ndys.top/2023/11/20/bot-Mirai-Administrator/)
 
-[HuYanSession2——壶言会话2使用手册](https:##w1ndys.top#2023#11#17#bot-HuYanSession2###)
+[HuYanSession2——壶言会话2使用手册](https://w1ndys.top/2023/11/17/bot-HuYanSession2/)
 
-[MuteGames使用手册](https://w1ndys.top/2023/12/06/bot-MuteGames/#/)
+[MuteGames使用手册](https://w1ndys.top/2023/12/06/bot-MuteGames/)
 
 # 关键词回复
 
-相关指令[请看这里](https:##w1ndys.top#2023#11#17#bot-HuYanSession2##%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%9E%E5%A4%8D)
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%9E%E5%A4%8D)
 
 # 快捷群管理
 
-相关指令[请看这里](https:##w1ndys.top#2023#11#17#bot-HuYanSession2##%E7%BE%A4%E7%AE%A1%E7%90%86)
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E7%BE%A4%E7%AE%A1%E7%90%86)
 
 # 违禁词监控
 
-相关指令[请看这里](https:##w1ndys.top#2023#11#17#bot-HuYanSession2##%E8%BF%9D%E7%A6%81%E8%AF%8D)
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E8%BF%9D%E7%A6%81%E8%AF%8D)
 
 # 定时器
 
-相关指令[请看这里](https:##w1ndys.top#2023#11#17#bot-HuYanSession2##%E5%AE%9A%E6%97%B6%E5%99%A8)
-
-# AI对话
-
-群内艾特一下bot
-
-然后接下来群内连续五句话都会被bot触发，无需艾特。超过五条需要重新艾特
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E5%AE%9A%E6%97%B6%E5%99%A8)
 
 # 奇怪图片生成
 
