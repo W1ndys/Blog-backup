@@ -7,6 +7,24 @@ categories:  [CTF,CTF学习日记]
 
 （坚持一天一更新……可能吧）
 
+# 2023年12月11日
+
+今天学点不一样的
+
+bat批处理相关知识
+
+每次都要输入命令，我干脆直接用bat批处理，点一下就好了
+
+https://blog.csdn.net/qq_41428418/article/details/132438144#/
+
+https://blog.csdn.net/s_y_w123/article/details/111353912#/
+
+https://github.com/Aloxaf/MirageTankGo#/
+
+解决了我没解决的问题
+
+get√
+
 # 2023年12月9日
 
 文件头文件尾的知识点https://w1ndys.top/2023/12/09/CTF-misc-fileheader/#/
