@@ -18,19 +18,19 @@ categories: [QQbot]
 
 # 关键词回复
 
-相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%9E%E5%A4%8D)
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%9E%E5%A4%8D)
 
 # 快捷群管理
 
-相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E7%BE%A4%E7%AE%A1%E7%90%86)
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2/#%E7%BE%A4%E7%AE%A1%E7%90%86)
 
 # 违禁词监控
 
-相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E8%BF%9D%E7%A6%81%E8%AF%8D)
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2/#%E8%BF%9D%E7%A6%81%E8%AF%8D)
 
 # 定时器
 
-相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2//%E5%AE%9A%E6%97%B6%E5%99%A8)
+相关指令[请看这里](https://w1ndys.top/2023/11/17/bot-HuYanSession2/#%E5%AE%9A%E6%97%B6%E5%99%A8)
 
 # 奇怪图片生成
 
