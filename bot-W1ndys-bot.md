@@ -10,6 +10,8 @@ categories: [QQbot]
 卷卷目前的功能主要有：
 [关键词回复](#关键词回复)      [快捷群管理](#快捷群管理)     [违禁词监控](#违禁词监控)    [定时器](#定时器)     [奇怪图片生成](#奇怪图片生成)     [点歌](#点歌)   [猜群友小游戏](#猜群友)
 
+[ChatLearning————学群友说话使用手册](https://w1ndys.top/2023/12/13/bot-ChatLearning/#/)
+
 [Mirai Administrator使用手册](https://w1ndys.top/2023/11/20/bot-Mirai-Administrator/)
 
 [HuYanSession2——壶言会话2使用手册](https://w1ndys.top/2023/11/17/bot-HuYanSession2/)
