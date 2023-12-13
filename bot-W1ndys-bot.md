@@ -86,9 +86,10 @@ categories: [QQbot]
 
 一个以 [Mirai-Console](https://github.com/mamoe/mirai) 为基础开发并为了满足群友PVP需求和抖M需求开发的禁言游戏集合
 
-# 群词云生成器
+# [群词云生成器](https://mirai.mamoe.net/topic/959/wordcloudplugin-%E7%BE%A4%E8%AF%8D%E4%BA%91%E7%94%9F%E6%88%90%E5%99%A8)
 
 使用方法:在群内发送 `本日词云`/`昨日词云`/`获取词云 `来使用
 也可以发送 `用户本日词云`/`用户昨日词云`/`获取用户词云` +`<用户名称>` 来获取指定用户的词云
 在config下timer文件可以配置定时任务
 更多功能可查看配置文件
+
