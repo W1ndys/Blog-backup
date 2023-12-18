@@ -17,6 +17,14 @@ ps：[《曲阜师范大学日常问题汇总》](https://w1ndys.top/2023/08/25/
 
 ---
 
+# 数据收集地址
+
+<font color=red size=5>数据收录完善问卷地址→戳</font>: [https://wj.qq.com/s2/12987247/cca3/]( https://wj.qq.com/s2/12987247/cca3/)
+
+<font color="#FF0000" size=5>本页面意见建议收集地址：</font>https://wj.qq.com/s2/13891803/e877/
+
+---
+
 “我并不强求访客必须留下一条数据来完善平台，或者强制谁必须填问卷，我只希望同学们在被本平台受益的同时也会想起来分享给朋友，让更多人受益，也会想起来回馈给平台数据，哪怕是一条，也会对大家有帮助，你所散发的光将会照亮整个世界“
 ~~“你可以躲在角落里沉默，但是不要诋毁和嘲笑比你勇敢的人，因为他们争取到的光明也许会照耀到你”~~
 
@@ -31,10 +39,6 @@ ps：[《曲阜师范大学日常问题汇总》](https://w1ndys.top/2023/08/25/
 - 附件【[附件1：新生选课指南.pptx](https://jwc.qfnu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1485250630&wbfileid=12142754)】
 - 附件【[附件2：学校统一身份认证账号激活说明.docx](https://jwc.qfnu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1485250630&wbfileid=12142753)】
 
-# 数据收集地址
-
-<font color=red size=5>数据收录完善问卷地址→戳</font>: [https://wj.qq.com/s2/12987247/cca3/]( https://wj.qq.com/s2/12987247/cca3/)
-
 # 前言
 
 **<u>十分建议用电脑浏览本站</u>**<font color=red><u>电脑可用Ctrl+f快捷键快速搜索定位，右侧有目录可以快速定位，手机可用浏览器页面搜索功能，请根据浏览器自行百度方法</u></font>
@@ -42,11 +46,6 @@ ps：[《曲阜师范大学日常问题汇总》](https://w1ndys.top/2023/08/25/
 链接可能会失效，加群 **497554955** 防迷路，更新专用QQ **2769731875** ，关于相关通知在QQ或群发，建群初期，暂时关闭发言，注意本群无广告不引流，放心食用
 
 [点击加群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=qP4o9XIAfXSScCZHSAvxQhZzgh9VM7h2&authKey=gbuqiu94MMW%2B5jV%2BF4LkD%2FP5e4OQW3T5KFgi5arRciFQByXntTURRdG%2BJWtfonTW&noverify=0&group_code=497554955)----------------[点击联系QQ](https://qm.qq.com/q/9n506oZ8Ri&personal_qrcode_source=4)
-
-
----
-
-博主寄语：“我并不强求访客必须留下一条数据来完善平台，或者强制谁必须填问卷，我只希望同学们在被本平台受益的同时也会想起来回馈给平台数据，哪怕是一条，也会对大家有帮助，**你所散发的光将会照亮整个世界**“~~**“你可以躲在角落里沉默，但是不要诋毁和嘲笑比你勇敢的人，因为他们争取到的光明也许会照耀到你”**~~
 
 ---
 
@@ -1270,22 +1269,11 @@ END
 
 2023年9月21日18点，本站浏览量已破2万，很荣幸能够为大家服务！
 
-<center>
-	<img src="https://s1.ax1x.com/2023/09/08/pPyfRe0.jpg" width="20%" height="20%"/>
-    <img src="https://s1.ax1x.com/2023/09/08/pPyfWwV.jpg" width="20%" height="20%"/>
-    <img src="https://z1.ax1x.com/2023/09/19/pP5eyT0.png" width="20%" height="20%"/>
-    <img src="https://s1.ax1x.com/2023/09/11/pPgZIOO.png" width="20%" height="20%"/>
-    <img src="https://s1.ax1x.com/2023/09/08/pPyffoT.png" width="20%" height="20%"/>
-</center>
-
-<center>
-    <img src="https://img1.imgtp.com/2023/09/09/8ly9ZPcC.jpg" width="20%" height="20%"/>
-</center>
-
-
 # 想赞助我？
+
+随意赞助，不绑架，打多少都行
 
 ![](/img/选课/收款码.jpg)
 
-随意赞助，不绑架，打多少都行
+
 
