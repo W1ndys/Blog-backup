@@ -3,17 +3,22 @@ title:  曲阜师范大学选课指北
 tags:  QFNU
 categories:  QFNU
 index_img:  /img/qfnu大门.jpg
+---
+
+<div style="display: flex; justify-content: space-between; text-align: center;">
+    <div style="text-align: left;">
+        PS:
+        <a href="https://w1ndys.top/2023/08/25/QFNU_Survival_Handbook/">《曲阜师范大学日常问题汇总》</a>
+        已开始施工
+    </div>
+    <div style="text-align: right;">
+        <a href="https://w1ndys.top/2023/09/06/QFNU_Course_Selection_Guide_North(yhxy)/">本页面用户协议</a>
+    </div>
+</div>
 
 ---
 
-ps：[《曲阜师范大学日常问题汇总》](https://w1ndys.top/2023/08/25/QFNU_Survival_Handbook/)已开始施工
-
-
----
-
-<font size=5>**<u>阅读本项目前请仔细阅读【曲阜师范大学选课指北项目用户协议】</u>**[用户协议](https://w1ndys.top/2023/09/06/QFNU_Course_Selection_Guide_North(yhxy)/)</font>
-
-<font color='red'>本项目数据原则上只客观描述上课风格，对于每一种情况，每一种同学的评价也不相同，数据来自全校同学并追加署名，无法做到完全符合实际情况，请仔细甄别</font>
+<font color='3498db'>本项目数据原则上只客观描述上课风格，对于每一种情况，每一种同学的评价也不相同，数据来自全校同学并追加署名，无法做到完全符合实际情况，请仔细甄别</font>
 
 ---
 
@@ -22,11 +27,6 @@ ps：[《曲阜师范大学日常问题汇总》](https://w1ndys.top/2023/08/25/
 <font color=red size=5>数据收录完善问卷地址→戳</font>: [https://wj.qq.com/s2/12987247/cca3/]( https://wj.qq.com/s2/12987247/cca3/)
 
 <font color="#FF0000" size=5>本页面意见建议收集地址：</font>https://wj.qq.com/s2/13891803/e877/
-
----
-
-“我并不强求访客必须留下一条数据来完善平台，或者强制谁必须填问卷，我只希望同学们在被本平台受益的同时也会想起来分享给朋友，让更多人受益，也会想起来回馈给平台数据，哪怕是一条，也会对大家有帮助，你所散发的光将会照亮整个世界“
-~~“你可以躲在角落里沉默，但是不要诋毁和嘲笑比你勇敢的人，因为他们争取到的光明也许会照耀到你”~~
 
 ---
 
