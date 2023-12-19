@@ -1,7 +1,7 @@
 ---
 title:  手把手！教你用新版OBS虚拟摄像头
 tags: Windows技术分享
-categories:  [Windows,office]	
+categories:  [Windows,OBS]	
 ---
 
 > 本教程基于B站https://www.bilibili.com/read/cv11603378/编写
