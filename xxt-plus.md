@@ -68,7 +68,9 @@ categories:  [线上课答案,超星学习通,刷课脚本]
 
 ### 账号注册
 
-[点击链接](https://sakuracat-a.com/user/#/register?code=Fo7cS2WA)进入官网
+微信搜索公众号关注：  `W1ndys_Official`  点击下方菜单GPT可获取注册地址
+
+![注册](/img/VPN/wx.png)
 
 ![注册](/img/VPN/注册账号.png)
 
