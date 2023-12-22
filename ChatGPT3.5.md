@@ -23,6 +23,8 @@ index_img: /img/ChatGPT/logo.jpg
 
 ### 账号注册
 
+有了这个工具，你不只是能进ai，还可以高速浏览GitHub等网站，以及............
+
 微信搜索公众号关注：  `  W1ndys_Official ` 或扫描下方二维码 然后进公众号点击下方菜单GPT可获取注册地址
 
 ![注册](/img/VPN/wx.png)
