@@ -63,7 +63,7 @@ index_img: /img/ChatGPT/logo.jpg
 
 ![节点](/img/VPN/节点.png)
 
-## Google账号的注册
+## Google账号的注册（有ChatGPT账号的可以跳过此步骤）
 
 （需要一直开着步骤一的工具）
 
