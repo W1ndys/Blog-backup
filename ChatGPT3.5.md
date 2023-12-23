@@ -17,7 +17,7 @@ index_img: /img/ChatGPT/logo.jpg
 
 # 工具准备
 
-1. 一台能上网的电脑
+1. 一台能上网的<span style="color:#FF0000; border:1px solid #FF3333;">电脑</span>，注意非常推荐使用电脑，否则会遇到很多未知问题
 
 2. Google Chrome（推荐）
 
@@ -25,7 +25,7 @@ index_img: /img/ChatGPT/logo.jpg
 
 3. 一个魔法工具（梯子）
 
-   <font color="#3333FF">需要特别注意的是，使用本工具有一定的流量计费，3.8-38.8 不等，根据自己需要选择</font>，此费用也不是我本人收取，而是流量的提供方收取，特别注意这点<font color="#FF0000" size=5>如果你介意此费用，你可以关闭此页面退出阅读了。</font>具体注意事项下面会提到
+   <font color="#3333FF">需要特别注意的是，使用本工具<span style="border:1px solid #808080;">有一定的流量计费</span>，3.8-38.8 不等，根据自己需要选择</font>，此费用也不是我本人收取，而是流量的提供方收取，特别注意这点<font color="#FF0000" size=5>如果你<span style="border:1px solid #000000;">介意此费用</span>，你可以<span style="border:1px solid #990099;">关闭此页面</span>退出阅读了。</font>具体注意事项下面会提到
 
 4. 一双灵敏的眼睛（不是
 
