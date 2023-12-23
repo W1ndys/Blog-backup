@@ -96,7 +96,7 @@ index_img: /img/ChatGPT/logo.jpg
 
 ## Google账号的注册
 
-<span style="background:#FF8000;">注意</span>：<span style="font-size:1.1em; color:#006600;">有ChatGPT账号的可以跳过此步骤，有Google账号的可以跳过此步骤，有Apple账号的可以先直接试试第三步，如果不行再回来本步骤</span>
+<span style="background:#FF8000;">注意</span>：<span style="font-size:1.1em; color:#FF3399;">有ChatGPT账号的可以跳过此步骤，有Google账号的可以跳过此步骤，有Apple账号的可以先直接试试第三步，如果不行再回来本步骤</span>
 
 （本质上来讲Microsoft账号也是可以的，但是我试过了，大陆手机号注册的Microsoft不可用，所以这里就一笔带过）
 
