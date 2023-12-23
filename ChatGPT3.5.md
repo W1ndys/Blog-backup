@@ -94,11 +94,15 @@ index_img: /img/ChatGPT/logo.jpg
 
 ![节点](/img/VPN/节点.png)
 
-## Google账号的注册（有ChatGPT账号的可以跳过此步骤）
+## Google账号的注册
+
+<span style="background:#FF8000;">注意</span>：<span style="font-size:1.1em; color:#006600;">有ChatGPT账号的可以跳过此步骤，有Google账号的可以跳过此步骤，有Apple账号的可以先直接试试第三步，如果不行再回来本步骤</span>
+
+（本质上来讲Microsoft账号也是可以的，但是我试过了，大陆手机号注册的Microsoft不可用，所以这里就一笔带过）
 
 （需要一直开着步骤一的工具）
 
-关于Google账号如何注册可以看下面链接另一篇博客，写的很详细了
+关于Google账号如何注册可以看下面链接另一篇博客
 
 https://w1ndys.top/2023/12/23/Google_account/
 
@@ -113,6 +117,8 @@ https://w1ndys.top/2023/12/23/Google_account/
 ![image-20231223010822238](/img/ChatGPT/image-1.png)
 
 点继续使用Google（另外有Apple可选Apple但后面需不需要别的认证我不知道，买不起果子没试过）
+
+（本质上来讲Microsoft账号也是可以的，但是我试过了，大陆手机号注册的Microsoft不可用，所以这里就一笔带过）
 
 ![image-20231223010933294](/img/ChatGPT/image-20231223010933294.png)
 
