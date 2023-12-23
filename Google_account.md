@@ -43,6 +43,10 @@ index_img: /img/Google/logo.png
 
 8. 选择中国，填写自己的手机号，点击Next
 
+关于手机号无法用于验证的问题，可以看这一位大佬的帖子：https://blog.csdn.net/qaqwqaqwq/article/details/130442226#/
+
+这个问题与我一开始写的第一步相呼应，开头切换英文主要就是为了解决这边
+
 ![在这里插入图片描述](/img/Google/Google8.png)
 
 9. 确认账户信息页面，没问题的话，点击 Next
