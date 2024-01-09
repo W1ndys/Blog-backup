@@ -1,8 +1,12 @@
 ---
 title:  从应用内存上来研究智慧曲园模拟请假条
 tags:  [QFNU,逆向技术]
-categories:  [QFNU,边缘试探]
-
+categories:  [QFNU]
+password: W1ndys
+abstract: 由于本文特殊性，请联系作者获取密码。
+message: 由于本文特殊性，请联系作者获取密码。
+wrong_pass_message: 密码不太对，去问问作者吧。
+wrong_hash_message: 抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。
 ---
 
 
