@@ -2,7 +2,7 @@
 title:  从应用内存上来研究智慧曲园模拟请假条
 tags:  [QFNU,逆向技术]
 categories:  [QFNU]
-password: w1ndys
+password: 
 abstract: 由于本文特殊性，请联系作者获取密码。
 message: 由于本文特殊性，请联系作者获取密码。
 wrong_pass_message: 密码不太对，去问问作者吧。
@@ -28,6 +28,12 @@ GameGuardian修改器下载地址https://dmod.3dmgame.com/mod/Download/196410
 # 具体操作
 
 未完待续……………………
+
+## 看看成品
+
+![end](/img/jiatiao/end.png)
+
+
 
 # 免责声明
 
