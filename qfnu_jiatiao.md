@@ -2,14 +2,32 @@
 title:  从应用内存上来研究智慧曲园模拟请假条
 tags:  [QFNU,逆向技术]
 categories:  [QFNU]
-password: W1ndys
+password: w1ndys
 abstract: 由于本文特殊性，请联系作者获取密码。
 message: 由于本文特殊性，请联系作者获取密码。
 wrong_pass_message: 密码不太对，去问问作者吧。
 wrong_hash_message: 抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。
 ---
 
+# 研究背景
 
+首先，我知道你曾经用过P图软件对假条截图进行修改，但是你好像发现，始终找不到与修改后的与原来的假条字体完全匹配的方法，本教程旨在通过程序内存进行修改，实现无损替换文字。
+
+<span style="border:1px solid #00FF00; color:#00FF00;">首先，请认真阅读本文文末的免责声明</span>
+
+# 必备工具
+
+1. 雷电模拟器
+2. 智慧曲园
+3. GameGuardian修改器
+
+雷电模拟器下载地址https://www.ldmnq.com/
+
+GameGuardian修改器下载地址https://dmod.3dmgame.com/mod/Download/196410
+
+# 具体操作
+
+未完待续……………………
 
 # 免责声明
 
